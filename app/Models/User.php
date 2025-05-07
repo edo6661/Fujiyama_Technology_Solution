@@ -12,6 +12,20 @@ class User extends Authenticatable
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
+    public function getIsAdminAttribute(): bool
+    {
+        return $this->roles()->where('name', 'admin')->exists();
+    }
+    public function blogs()
+    {
+        return $this->hasMany(Blog::class, 'user_id', 'id');
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class, 'role_user', 'user_id', 'role_id');
+    }
+
     /**
      * The attributes that are mass assignable.
      *

@@ -7,7 +7,7 @@
         <x-partials.head :title="$title"/>
     </head>
     <body>
-        <header>
+        <header>    
             <a href="{{ route('home') }}">
                 Home
             </a>
