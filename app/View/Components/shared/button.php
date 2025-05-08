@@ -5,6 +5,7 @@ namespace App\View\Components\shared;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+
 class Button extends Component
 {
     /**
@@ -32,6 +33,13 @@ class Button extends Component
      */
     public function render(): View
     {
-        return view('components.shared.button');
+        return view('components.shared.button', [
+            'type' => $this->type,
+            'variant' => $this->variant,
+            'href' => $this->href,
+            'size' => $this->size,
+            'disabled' => $this->disabled,
+            'fullWidth' => $this->fullWidth,
+        ]);
     }
 }

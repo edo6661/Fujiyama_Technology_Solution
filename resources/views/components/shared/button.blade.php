@@ -1,10 +1,10 @@
 @props([
-    'type' => $type,
-    'variant' => $variant,
-    'href' => $href,
-    'size' => $size,
-    'disabled' => $disabled,
-    'fullWidth' => $fullWidth,
+    'type' => 'button',
+    'variant' => 'primary',
+    'href' => null,
+    'size' => 'md',
+    'disabled' => false,
+    'fullWidth' => false,
 ])
 
 @php

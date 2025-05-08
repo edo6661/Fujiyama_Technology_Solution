@@ -6,7 +6,6 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-
 class Input extends Component
 {
     /**
@@ -36,6 +35,21 @@ class Input extends Component
      */
     public function render(): View
     {
-        return view('components.shared.input');
+        return view('components.shared.input', [
+            'type' => $this->type,
+            'name' => $this->name,
+            'id' => $this->id,
+            'label' => $this->label,
+            'placeholder' => $this->placeholder,
+            'value' => $this->value,
+            'required' => $this->required,
+            'disabled' => $this->disabled,
+            'readonly' => $this->readonly,
+            'size' => $this->size,
+            'variant' => $this->variant,
+            'fullWidth' => $this->fullWidth,
+            'helperText' => $this->helperText,
+            'error' => $this->error,
+        ]);
     }
 }

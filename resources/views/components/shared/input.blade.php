@@ -1,16 +1,16 @@
 @props([
-    'type' => $type ?? 'text',
-    'name' => $name ?? '',
-    'id' => $id ?? $name ?? '',
-    'label' => $label ?? null,
-    'placeholder' => $placeholder ?? '',
-    'value' => $value ?? '',
-    'required' => $required ?? false,
-    'disabled' => $disabled ?? false,
-    'readonly' => $readonly ?? false,
-    'size' => $size ?? 'md',
-    'variant' => $variant ?? 'default',
-    'fullWidth' => $fullWidth ?? true,
+    'type' => 'text',
+    'name' => '',
+    'id' => null,
+    'label' => null,
+    'placeholder' => '',
+    'value' => '',
+    'required' => false,
+    'disabled' => false,
+    'readonly' => false,
+    'size' => 'md',
+    'variant' => 'default',
+    'fullWidth' => false,
     'leadingIcon' => null,
     'trailingIcon' => null,
     'helperText' => null,
@@ -18,6 +18,8 @@
 ])
 
 @php
+    $id = $id ?? $name;
+    
     $baseClasses = 'block transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500';
     
     $variantClasses = [
@@ -67,14 +69,12 @@
             @endif
         </label>
     @endif
-
     <div class="{{ $wrapperClass }}">
         @if ($leadingIcon)
             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-500">
                 {{ $leadingIcon }}
             </div>
         @endif
-
         <input
             type="{{ $type }}"
             name="{{ $name }}"
@@ -86,18 +86,15 @@
             {{ $readonly ? 'readonly' : '' }}
             {{ $attributes->merge(['class' => $classes]) }}
         />
-
         @if ($trailingIcon)
             <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-gray-500">
                 {{ $trailingIcon }}
             </div>
         @endif
     </div>
-
     @if ($helperText && !$error)
         <p class="mt-1 text-sm text-gray-500">{{ $helperText }}</p>
     @endif
-
     @if ($error)
         <p class="mt-1 text-sm text-red-600">{{ $error }}</p>
     @endif
