@@ -50,9 +50,9 @@
                     <tr class="hover:bg-gray-50">
                         <td class="py-4 px-6">
                             <div class="flex items-center">
-                                @if($blog->logo_url)
+                                @if($blog->image_url)
                                 <div class="h-10 w-10 flex-shrink-0 mr-3">
-                                    <img class="h-10 w-10 rounded object-cover" src="{{ $blog->logo_url }}" alt="{{ $blog->title }}">
+                                    <img class="h-10 w-10 rounded object-cover" src="{{ Storage::disk('s3')->url($blog->image) }}" alt="{{ $blog->title }}">
                                 </div>
                                 @else
                                 <div class="h-10 w-10 flex-shrink-0 mr-3 bg-gray-200 rounded flex items-center justify-center">

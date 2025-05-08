@@ -33,7 +33,7 @@
                         <div class="md:col-span-1">
                             <div class="bg-gray-100 rounded-lg overflow-hidden">
                                 <img 
-                                    src="{{ $blog->logoUrl }}" 
+                                    src="{{ $blog->image_url }}" 
                                     alt="{{ $blog->title }}" 
                                     class="w-full h-auto object-cover"
                                 >

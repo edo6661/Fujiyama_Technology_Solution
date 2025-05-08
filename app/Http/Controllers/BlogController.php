@@ -35,7 +35,7 @@ class BlogController extends Controller
         $data = $request->validated();
         
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('blogs', 'public');
+            $imagePath = $request->file('image')->store('blogs', 's3');
             $data['image'] = $imagePath;
         }
         
@@ -71,11 +71,13 @@ class BlogController extends Controller
         $data = $request->validated();
         
         if ($request->hasFile('image')) {
-            if ($blog->image && Storage::disk('public')->exists($blog->image)) {
-                Storage::disk('public')->delete($blog->image);
+            // Hapus file lama dari R2 jika ada
+            if ($blog->image) {
+                Storage::disk('s3')->delete($blog->image);
             }
             
-            $imagePath = $request->file('image')->store('blogs', 'public');
+            // Upload file baru ke R2 di folder blogs (bukan file)
+            $imagePath = $request->file('image')->store('blogs', 's3');
             $data['image'] = $imagePath;
         }
         
@@ -91,8 +93,10 @@ class BlogController extends Controller
     public function destroy(Request $request)
     {
         $blog = Blog::findOrFail($request->id);
-        if ($blog->image && Storage::disk('public')->exists($blog->image)) {
-            Storage::disk('public')->delete($blog->image);
+        
+        // Hapus file dari R2
+        if ($blog->image) {
+            Storage::disk('s3')->delete($blog->image);
         }
         
         $blog->delete();

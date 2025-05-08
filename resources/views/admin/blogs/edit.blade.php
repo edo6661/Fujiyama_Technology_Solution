@@ -66,7 +66,7 @@
                                     <div id="imagePreviewContainer" class="w-32 h-32 bg-gray-100 rounded-md overflow-hidden">
                                         <img 
                                             id="imagePreview"
-                                            src="{{ $blog->logoUrl }}" 
+                                            src="{{ $blog->image_url }}" 
                                             alt="{{ $blog->title }}" 
                                             class="w-full h-full object-cover"
                                         >
