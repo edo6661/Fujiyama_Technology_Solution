@@ -85,9 +85,14 @@
                                 <a href="{{ route('blogs.edit', $blog) }}" class="text-yellow-600 hover:text-yellow-900" title="Edit">
                                     <i class="fas fa-edit"></i>
                                 </a>
-                                <button class="text-red-600 hover:text-red-900" title="Hapus">
-                                    <i class="fas fa-trash"></i>
-                                </button>
+                                <form action="{{ route('blogs.destroy', $blog) }}" method="POST" class="inline">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input type="hidden" name="id" value="{{ $blog->id }}">
+                                    <button type="submit" class="text-red-600 hover:text-red-900" title="Hapus" onclick="return confirm('Apakah Anda yakin ingin menghapus artikel ini?')">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
                             </div>
                         </td>
                     </tr>
