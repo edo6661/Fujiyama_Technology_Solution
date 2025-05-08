@@ -66,8 +66,8 @@
                         @forelse(\App\Models\Blog::latest()->take(5)->get() as $blog)
                         <tr>
                             <td class="py-2 px-4 border-b border-gray-200">
-                                @if($blog->logo_url)
-                                <img class="h-10 w-10 rounded object-cover" src="{{ $blog->logo_url }}" alt="{{ $blog->title }}">
+                                @if($blog->image_url)
+                                <img class="h-10 w-10 rounded object-cover" src="{{ $blog->image_url }}" alt="{{ $blog->title }}">
                                 @else
                                 <div class="h-10 w-10 bg-gray-200 rounded flex items-center justify-center">
                                     <i class="fas fa-newspaper text-gray-400"></i>
