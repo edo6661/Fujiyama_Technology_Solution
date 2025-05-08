@@ -13,12 +13,12 @@
         <h2 class="md:text-7xl text-4xl"> {{$subtitle}} </h2>
         <h2 class="md:text-7xl text-4xl font-bold"> {{$description}} </h2>
         <div class="container-btn-hero flex items-center justify-center gap-8">
-            <x-shared.button variant="secondary" >
+            <x-shared.link-button variant="secondary" >
                 GET STARTED 
-           </x-shared.button> 
-           <x-shared.button>
+           </x-shared.link-button> 
+           <x-shared.link-button>
                 LEARN MORE
-           </x-shared.button>                          
+           </x-shared.link-button>                          
         </div>
     </div>
 </div>

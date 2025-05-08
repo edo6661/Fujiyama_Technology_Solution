@@ -7,8 +7,8 @@
             <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">Need Any Consultations?</h3>
         </div>
         <div class="flex items-center mt-4 gap-8">
-            <x-shared.button>CONTACT US +</x-shared.button>
-            <x-shared.button>OUR PROJECTS +</x-shared.button>
+            <x-shared.link-button>CONTACT US +</x-shared.link-button>
+            <x-shared.link-button>OUR PROJECTS +</x-shared.link-button>
         </div>
     </div>
 </div>

@@ -77,9 +77,9 @@
                         Dashboard
                     </a>
                 @else
-                    {{-- <a href="{{ route('login') }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
+                    <a href="{{ route('login') }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
                         Login
-                    </a> --}}
+                    </a>
                 @endif
               </div>
               

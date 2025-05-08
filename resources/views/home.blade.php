@@ -1,3 +1,5 @@
+@vite([ 'resources/js/app.js'])
+
 <x-layouts.app title="Home">
     <x-features.home.hero/>
     <x-features.home.about/>

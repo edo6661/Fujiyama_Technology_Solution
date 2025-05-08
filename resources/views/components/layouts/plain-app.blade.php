@@ -7,11 +7,7 @@
         <x-partials.head :title="$title"/>
     </head>
     <body>
-        <header>    
-            <a href="{{ route('home') }}">
-                Home
-            </a>
-        </header>
+      
         <main>
             {{ $slot }}
         </main>

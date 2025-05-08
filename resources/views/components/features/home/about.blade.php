@@ -32,8 +32,8 @@
                 description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan"
             />
         </div>
-        <x-shared.button variant="tertiary" class="w-fit">
+        <x-shared.link-button variant="tertiary" class="w-fit">
             GET STARTED
-        </x-shared.button>
+        </x-shared.link-button>
     </div>
 </section>
