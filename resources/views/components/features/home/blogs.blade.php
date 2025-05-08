@@ -1,13 +1,13 @@
 
 <section id="blog" class="flex flex-col py-8 text-center space-y-4 px-4 ">
-    <p class="font-semibold text-lg">
+    <p class="font-semibold text-lg text-white">
         Our latest Blog
     </p>
     <div>
-        <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold">
+        <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
             Our Recent Article
         </h3>
-        <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold">
+        <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
             News & Tips
         </h3>
     </div>
@@ -20,7 +20,7 @@
             ];
         @endphp
         @foreach ($blogs as $blog)
-            <x-blog.item 
+            <x-features.home.blog-item
                 :blog="$blog"
             />
         @endforeach

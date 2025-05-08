@@ -3,19 +3,19 @@ $products = [
     [
         'title' => 'Super Technology',
         'description' => 'Perspiciatis unde omnis iste natu error sit voluptatem accusantium doloremque laudantium totam rem aperiam',
-        'image' => @svg('hugeicons-nano-technology'),
+        'image' => '<i class="fa-solid fa-microchip"></i>',
         'link' => '#'
     ],
     [
         'title' => 'Product Strategy',
         'description' => 'Perspiciatis unde omnis iste natu error sit voluptatem accusantium doloremque laudantium totam rem aperiam',
-        'image' => @svg('carbon-product'),
+        'image' => '<i class="fa-solid fa-chess-board"></i>',
         'link' => '#'
     ],
     [
         'title' => 'Product Launching',
         'description' => 'Perspiciatis unde omnis iste natu error sit voluptatem accusantium doloremque laudantium totam rem aperiam',
-        'image' => @svg('clarity-launchpad-line'),
+        'image' => '<i class="fa-solid fa-rocket"></i>',
         'link' => '#'
     ]
 ];
@@ -43,7 +43,7 @@ $products = [
         </div>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
             @foreach ($products as $product)
-                <x-what-we-do.product-item
+                <x-features.home.what-we-do-product-item
                     :title="$product['title']"
                     :description="$product['description']"
                     :image="$product['image']"

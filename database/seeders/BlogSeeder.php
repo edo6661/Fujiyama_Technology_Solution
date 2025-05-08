@@ -19,14 +19,14 @@ class BlogSeeder extends Seeder
             Blog::create([
                 'title' => 'Pengenalan Laravel',
                 'description' => 'Laravel adalah framework PHP yang elegan dan ekspresif untuk pengembangan web modern.',
-                'image' => 'https://id.pinterest.com/pin/288582288641389332/',
+                'image' => 'https://i.pinimg.com/736x/4a/d0/35/4ad035437e429e46da631b2a4e5d1cc9.jpg',
                 'user_id' => $user->id,
             ]);
 
             Blog::create([
                 'title' => 'Tips Belajar Programming',
                 'description' => 'Kumpulan tips dan trik yang dapat membantu Anda menjadi programmer yang lebih baik.',
-                'image' => 'https://id.pinterest.com/pin/844493673849309/',
+                'image' => 'https://i.pinimg.com/736x/2d/30/fe/2d30fe3ec37991b766474fb0740affa0.jpg',
                 'user_id' => $user->id,
             ]);
 

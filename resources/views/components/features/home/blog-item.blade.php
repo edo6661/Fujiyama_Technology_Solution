@@ -4,17 +4,17 @@
     </div>
     <div class="text-start space-y-4 px-4">
         <div class="flex gap-2">
-            <x-zondicon-calendar class="w-4 h-4 text-primary-blue"/>
+            {{-- <x-zondicon-calendar class="w-4 h-4 text-primary-blue"/> --}}
             <p class="text-tertiary-gray font-medium">
                 {{ $blog->created_at->format('d M Y') }}
             </p>
         </div>
-        <h3 class="font-semibold md:text-3xl text-2xl">
+        <h3 class="font-semibold md:text-3xl text-2xl text-white">
             {{ $blog->title }}
         </h3>
         <p class="font-nunito-sans text-tertiary-gray">
             {{ $blog->description_trim }}
         </p>
-        <x-link-read-more  class="text-white"/>
+        <x-features.home.blog-item-link  class="text-white"/>
     </div>
 </div>

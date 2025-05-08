@@ -12,16 +12,14 @@
     <p class="font-nunito-sans text-primary-gray ">
         {{ $description }}
     </p>
-    <div class="container-svg-what-we-do">
-        {{ $image }}
+    <div class="container-image-what-we-do">
+        {!! $image !!}
     </div>
-   <x-link-read-more :href="$link"/>
+   <x-features.home.blog-item-link :href="$link"/>
 </div>
-
 <style>
-    .container-svg-what-we-do > svg {
-        width: 4rem;
-        height: 4rem;
-        color: var(--primary-blue);
+    .container-image-what-we-do i {
+        font-size: 4rem;
+        color: var(--primary-blue)
     }
 </style>

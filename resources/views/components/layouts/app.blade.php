@@ -8,7 +8,7 @@
     </head>
     <body>
         <x-partials.header/>
-        <main>
+        <main class="space-y-16">
             {{ $slot }}
         </main>
         <x-partials.footer/>

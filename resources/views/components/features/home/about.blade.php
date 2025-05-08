@@ -23,11 +23,11 @@
             </p>
         </div>
         <div class="space-y-4">
-            <x-about.title-description
+            <x-features.home.about-title-description
                 title="Company Experience"
                 description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan"
             />
-            <x-about.title-description
+            <x-features.home.about-title-description
                 title="Company Experience"
                 description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan"
             />
