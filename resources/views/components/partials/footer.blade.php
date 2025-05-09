@@ -24,12 +24,11 @@
             <div class="flex flex-col gap-2">
                 @php
                     $navItems = [
-                        'Home' => '/',
-                        'Company' => '/company',
-                        'Services' => '/services',
-                        'Projects' => '/projects',
-                        'Blog' => '/blog',
-                        'Contact' => '/contact',
+                        'Home' => "/#",
+                        'About' => '/#about',
+                        'Services' => '/#what-we-do',
+                        'Blog' => '/#blog',
+                        'Contact' => '/#footer',
                     ]; 
                 @endphp
                 @foreach ($navItems as $name => $link)
