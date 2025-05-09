@@ -4,7 +4,7 @@
             <div class="flex justify-between items-center mb-6">
                 <x-shared.heading 
                     :title="__('Edit Blog')" 
-                    :description="__('Perbarui informasi blog')" 
+                    :description="__('Update the blog post')" 
                 />
                 
                 <x-shared.button 
@@ -12,7 +12,7 @@
                     variant="secondary"
                 >
                     <i class="fas fa-arrow-left mr-2"></i>
-                    {{ __('Kembali') }}
+                    {{ __('Back') }}
                 </x-shared.button>
             </div>
 
@@ -27,8 +27,8 @@
                                 <x-shared.input 
                                     name="title" 
                                     type="text" 
-                                    label="Judul Blog" 
-                                    placeholder="Masukkan judul blog" 
+                                    label="Title" 
+                                    placeholder="Input title blog" 
                                     :value="old('title', $blog->title)"
                                     required
                                     fullWidth
@@ -39,8 +39,8 @@
                             <div>
                                 <x-shared.textarea 
                                     name="description" 
-                                    label="Deskripsi" 
-                                    placeholder="Masukkan deskripsi blog" 
+                                    label="Description" 
+                                    placeholder="Input description blog" 
                                     :value="old('description', $blog->description)"
                                     rows="5"
                                     required
@@ -51,7 +51,7 @@
                             
                             <div>
                                 <label for="image" class="block text-sm font-medium text-gray-700 mb-1">
-                                    {{ __('Gambar') }}
+                                    {{ __('Image') }}
                                 </label>
                                 
                                 <div class="mt-1 flex items-center">
@@ -74,7 +74,9 @@
                                             onchange="previewImage(this)"
                                         />
                                         <p class="mt-1 text-sm text-gray-500">
-                                            {{ __('Biarkan kosong jika tidak ingin mengubah gambar.') }}
+                                            {{ __('
+                                                Empty if you do not want to change the image.
+                                            ') }}
                                         </p>
                                     </div>
                                 </div>
@@ -83,7 +85,7 @@
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                                 @enderror
                                 <p class="mt-1 text-sm text-gray-500">
-                                    {{ __('Format: JPG, PNG, JPEG, GIF. Maksimal 2MB.') }}
+                                    {{ __('Format: JPG, PNG, JPEG, GIF. Max 2MB.') }}
                                 </p>
                             </div>
                         </div>
@@ -93,7 +95,7 @@
                                 type="submit" 
                                 variant="primary"
                             >
-                                {{ __('Perbarui Blog') }}
+                                {{ __('Save Blog') }}
                             </x-shared.button>
                         </div>
                     </form>

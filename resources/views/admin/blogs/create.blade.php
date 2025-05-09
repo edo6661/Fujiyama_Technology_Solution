@@ -1,19 +1,13 @@
-<x-layouts.admin-app title="Tambah Blog Baru">
+<x-layouts.admin-app title="Add Blog">
     <div class="py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center mb-6">
                 <x-shared.heading 
-                    :title="__('Tambah Blog Baru')" 
-                    :description="__('Buat dan publikasikan blog baru')" 
+                    :title="__('Add Blog')" 
+                    :description="__('Create a new blog post')" 
                 />
                 
-                <x-shared.button 
-                    :href="route('blogs.index')"
-                    variant="secondary"
-                >
-                    <i class="fas fa-arrow-left mr-2"></i>
-                    {{ __('Kembali') }}
-                </x-shared.button>
+                
             </div>
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -26,8 +20,8 @@
                                 <x-shared.input 
                                     name="title" 
                                     type="text" 
-                                    label="Judul Blog" 
-                                    placeholder="Masukkan judul blog" 
+                                    label="Title" 
+                                    placeholder="Input title blog" 
                                     :value="old('title')"
                                     required
                                     fullWidth
@@ -38,8 +32,8 @@
                             <div>
                                     <x-shared.textarea 
                                     name="description" 
-                                    label="Deskripsi" 
-                                    placeholder="Masukkan deskripsi blog" 
+                                    label="Description" 
+                                    placeholder="Input description blog" 
                                     :value="old('description')"
                                     rows="5"
                                     required
@@ -50,7 +44,7 @@
                             
                             <div>
                                 <label for="image" class="block text-sm font-medium text-gray-700 mb-1">
-                                    {{ __('Gambar') }}
+                                    {{ __('Image') }}
                                 </label>
                                 <div class="mt-1 flex items-center">
                                     <div id="imagePreviewContainer" class="inline-block h-32 w-32 rounded-md overflow-hidden bg-gray-100">
@@ -76,7 +70,7 @@
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                                 @enderror
                                 <p class="mt-1 text-sm text-gray-500">
-                                    {{ __('Format: JPG, PNG, JPEG, GIF. Maksimal 2MB.') }}
+                                    {{ __('Format: JPG, PNG, JPEG, GIF. Max 2MB.') }}
                                 </p>
                             </div>
                         </div>
@@ -86,7 +80,7 @@
                                 type="submit" 
                                 variant="primary"
                             >
-                                {{ __('Simpan Blog') }}
+                                {{ __('Save Blog') }}
                             </x-shared.button>
                         </div>
                     </form>

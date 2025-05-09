@@ -65,9 +65,6 @@
                 </header>
 
                 <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
-                    <div class="mb-6">
-                        <h1 class="text-2xl font-semibold text-gray-800">{{ $title }}</h1>
-                    </div>
                     
                     <div class="bg-white rounded-lg shadow-sm p-6">
                         {{ $slot }}
