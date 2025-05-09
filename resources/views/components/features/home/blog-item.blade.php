@@ -1,6 +1,6 @@
 <div class="relative">
     <a href="{{ route('blog', [$blog]) }}" class="absolute inset-0 z-10"></a>
-    <div class="flex flex-col gap-6 bg-quinary-gray pb-6 rounded-lg relative">
+    <div class="flex flex-col gap-6 bg-quinary-gray pb-6 rounded-lg relative min-h-[540px]">
         <div>
             <img src="{{ $blog->image_url }}" alt="Blog 1" class="w-full h-64 rounded-t-lg object-cover"/>
         </div>
