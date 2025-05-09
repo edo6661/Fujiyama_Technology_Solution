@@ -39,21 +39,16 @@
                             
                             <!-- Description -->
                             <div>
-                                <label for="description" class="block text-sm font-medium text-gray-700 mb-1">
-                                    {{ __('Deskripsi') }}
-                                </label>
-                                <textarea
-                                    id="description"
-                                    name="description"
+                                <x-shared.textarea 
+                                    name="description" 
+                                    label="Deskripsi" 
+                                    placeholder="Masukkan deskripsi blog" 
+                                    :value="old('description', $blog->description)"
                                     rows="5"
-                                    class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm @error('description') border-red-500 @enderror"
-                                    placeholder="Masukkan deskripsi blog"
                                     required
-                                >{{ old('description', $blog->description) }}</textarea>
-                                
-                                @error('description')
-                                    <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
-                                @enderror
+                                    fullWidth
+                                    :error="$errors->first('description')"
+                                    />
                             </div>
                             
                             <!-- Image -->
