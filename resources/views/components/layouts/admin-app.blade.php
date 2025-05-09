@@ -40,7 +40,6 @@
     </head>
     <body class="bg-gray-100 font-sans">
         <div class="flex h-screen overflow-hidden">
-            <!-- Sidebar -->
             <div id="sidebar" class="sidebar-menu bg-gray-800 text-white w-64 flex-shrink-0">
                 <div class="p-4 flex items-center justify-between border-b border-gray-700">
                     <span class="text-xl font-bold">Admin Panel</span>
@@ -53,12 +52,9 @@
                 </nav>
             </div>
 
-            <!-- Overlay for mobile -->
             <div id="sidebar-overlay" class="sidebar-overlay md:hidden"></div>
 
-            <!-- Main Content -->
             <div class="flex-1 flex flex-col overflow-hidden">
-                <!-- Mobile Header -->
                 <header class="bg-white shadow-sm md:hidden">
                     <div class="px-4 py-3 flex items-center justify-between">
                         <button id="toggle-sidebar" class="text-gray-800">
@@ -80,7 +76,6 @@
             </div>
         </div>
 
-        <!-- Scripts -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const sidebar = document.getElementById('sidebar');

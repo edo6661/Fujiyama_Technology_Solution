@@ -1,6 +1,5 @@
 <x-layouts.plain-app title="Login">
     <div class="min-h-screen flex flex-col lg:flex-row">
-        <!-- Left Side - Form -->
         <div class="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 lg:max-w-md xl:max-w-lg">
             <div class="w-full max-w-md space-y-8">
                 <div>
@@ -131,9 +130,7 @@
             </div>
         </div>
         
-        <!-- Right Side - Image -->
         <div class="hidden lg:block lg:flex-1 bg-gradient-to-r from-blue-500 to-indigo-600 relative overflow-hidden">
-            <!-- Anda bisa mengganti URL gambar di bawah ini -->
             <img 
                 src="{{ asset('images/login.png') }}" 
                 alt="Login" 

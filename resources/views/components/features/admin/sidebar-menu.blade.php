@@ -1,4 +1,3 @@
-<!-- resources/views/components/features/admin/sidebar-menu.blade.php -->
 <ul class="space-y-2">
     <li>
         <a href="{{ route('dashboard') }}" class="flex items-center px-4 py-3 text-gray-300 hover:bg-gray-700 hover:text-white rounded-md transition-colors {{ request()->routeIs('dashboard') ? 'bg-gray-700 text-white' : '' }}">

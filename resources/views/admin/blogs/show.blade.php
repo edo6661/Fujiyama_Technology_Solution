@@ -29,7 +29,6 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <!-- Image -->
                         <div class="md:col-span-1">
                             <div class="bg-gray-100 rounded-lg overflow-hidden">
                                 <img 
@@ -40,7 +39,6 @@
                             </div>
                         </div>
                         
-                        <!-- Blog Details -->
                         <div class="md:col-span-2 space-y-6">
                             <div>
                                 <h3 class="text-lg font-medium text-gray-900">{{ __('Judul') }}</h3>

@@ -22,7 +22,6 @@
                         @csrf
                         
                         <div class="grid grid-cols-1 gap-6">
-                            <!-- Title -->
                             <div>
                                 <x-shared.input 
                                     name="title" 
@@ -36,7 +35,6 @@
                                 />
                             </div>
                             
-                            <!-- Description -->
                             <div>
                                     <x-shared.textarea 
                                     name="description" 
@@ -50,7 +48,6 @@
                                     />
                             </div>
                             
-                            <!-- Image -->
                             <div>
                                 <label for="image" class="block text-sm font-medium text-gray-700 mb-1">
                                     {{ __('Gambar') }}
