@@ -46,7 +46,7 @@
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200">
-                    @forelse(\App\Models\Blog::latest()->paginate(perPage: 2) as $blog)
+                    @forelse($blogs as $blog)
                     <tr class="hover:bg-gray-50">
                         <td class="py-4 px-6">
                             <div class="flex items-center">
@@ -117,7 +117,7 @@
         </div>
 
         <div class="p-4 border-t">
-            {{ \App\Models\Blog::latest()->paginate(2)->links() }}
+            {{ $blogs->links() }}
         </div>
     </div>
 </x-layouts.admin-app>

@@ -12,17 +12,11 @@
         </h3>
     </div>
     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-12">
-        @php
-            $blogPosts = [
-                ['img' => 'images/blog-1.jpg', 'date' => '30 DEC 2024', 'title' => 'Smash Podcast Episode With Paul Boag', 'description' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem petech doloremque laudantium totam rem aperiam'],
-                ['img' => 'images/blog-1.jpg', 'date' => '30 DEC 2024', 'title' => 'Smash Podcast Episode With Paul Boag', 'description' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem petech doloremque laudantium totam rem aperiam'],
-                ['img' => 'images/blog-1.jpg', 'date' => '30 DEC 2024', 'title' => 'Smash Podcast Episode With Paul Boag', 'description' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem petech doloremque laudantium totam rem aperiam'],
-            ];
-        @endphp
+       
         @foreach ($blogs as $blog)
             <x-features.home.blog-item
                 :blog="$blog"
-            />
+        />
         @endforeach
         
     </div>

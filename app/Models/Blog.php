@@ -40,4 +40,7 @@ class Blog extends Model
     public function getDescriptionTrimAttribute() {
         return Str::limit($this->description,100);
     }
+    public function getTitleTrimAttribute() {
+        return Str::limit($this->title,50);
+    }
 }

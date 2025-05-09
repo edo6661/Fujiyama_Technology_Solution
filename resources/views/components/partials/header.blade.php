@@ -10,7 +10,10 @@
         </div>
         <div class="flex bg-white items-center justify-around py-4">
             <div>
-                <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-full lg:h-12 h-8">
+                <a href="/">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-full lg:h-12 h-8">
+                
+                </a>
             </div>
             <div class="flex items-center justify-between lg:gap-8 gap-4">
                 <x-nav-icon-content
@@ -46,12 +49,11 @@
             <ul class="items-center flex gap-4">
                 @php
                     $navItems = [
-                        'Home' => '/',
-                        'Company' => '/company',
-                        'Services' => '/services',
-                        'Projects' => '/projects',
-                        'Blog' => '/blog',
-                        'Contact' => '/contact',
+                        'Home' => "/#",
+                        'About' => '/#about',
+                        'Services' => '/#what-we-do',
+                        'Blog' => '/#blog',
+                        'Contact' => '/#footer',
                     ]; 
                 @endphp
                 @foreach ($navItems as $name => $link)

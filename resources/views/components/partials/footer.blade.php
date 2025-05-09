@@ -1,4 +1,4 @@
-<footer class="pb-8 px-4 text-black space-y-8">
+<footer class="pb-8 px-4 text-black space-y-8" id="footer">
     <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-evenly">
         <div class="space-y-4">
             <h4 class="font-semibold text-xl">
