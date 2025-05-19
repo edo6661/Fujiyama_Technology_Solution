@@ -12,25 +12,27 @@
     </div>
     <div class="container-right-about text-black space-y-6">
         <p class="text-primary-blue font-bold text-lg">
-            ABOUT COMPANY
+            ABOUT FUJIYAMA TECHNOLOGY SOLUTION
         </p>
         <div class="space-y-4">
             <h3 class="font-bold md:text-4xl text-3xl">
-                We Discover About 45 Years About IT
+                Your Partner for Digital Infrastructure
             </h3>
             <p class="text-primary-gray font-nunito-sans">
-                Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque udantium totam rem aperiam eaque ipsa quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+                Fujiyama Technology Solution provides reliable server rental services with a bonus: we build your website and mobile app for free when you host with us. We aim to accelerate your digital presence with solid infrastructure and modern development.
             </p>
+
         </div>
         <div class="space-y-4">
             <x-features.home.about-title-description
-                title="Company Experience"
-                description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan"
+                title="Server Rental Services"
+                description="Robust and secure hosting solutions tailored for your business needs."
             />
             <x-features.home.about-title-description
-                title="Company Experience"
-                description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan"
+                title="Free Web & Mobile App Development"
+                description="Get your digital platforms built by professionals at no extra cost—just by renting our servers."
             />
+
         </div>
         <x-shared.link-button variant="tertiary" class="w-fit">
             GET STARTED

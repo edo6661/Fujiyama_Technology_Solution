@@ -1,11 +1,12 @@
 <footer class="pb-8 px-4 text-black space-y-8" id="footer">
     <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 justify-evenly">
+        
         <div class="space-y-4">
             <h4 class="font-semibold text-xl">
-                Join Newsletters
+                Join Our Newsletter
             </h4>
             <p class="text-primary-gray font-nunito-sans">
-                Bed perspiciatis unde omnis iste natus error voluptatem accusantium oloremque laudantie totam rem aperiam
+                Stay updated with the latest tech trends and exclusive offers from Fujiyama Technology Solution.
             </p>
             <div class="flex items-center">
                 <input
@@ -17,6 +18,8 @@
                 </button>
             </div>
         </div>
+
+        
         <div class="space-y-4">
             <h4 class="font-semibold text-xl">
                 Quick Links
@@ -25,7 +28,7 @@
                 @php
                     $navItems = [
                         'Home' => "/#",
-                        'About' => '/#about',
+                        'About Us' => '/#about',
                         'Services' => '/#what-we-do',
                         'Blog' => '/#blog',
                         'Contact' => '/#footer',
@@ -38,41 +41,55 @@
                 @endforeach
             </div>
         </div>
+
+        
         <div class="space-y-4">
             <h4 class="font-semibold text-xl">
                 Contact Us
             </h4>
             <div class="space-y-2">
                 <div class="flex gap-1 items-center">
-                    <i class="fa-solid fa-phone  text-primary-blue"></i>
-
+                    <i class="fa-solid fa-phone text-primary-blue"></i>
                     <p class="text-primary-gray font-nunito-sans">
-                        +1 234 567 890
+                        +62 812-3456-7890
                     </p>
                 </div>
                 <div class="flex gap-1 items-center">
-                    <i class="fa-solid fa-phone  text-primary-blue"></i>
+                    <i class="fa-solid fa-envelope text-primary-blue"></i>
                     <p class="text-primary-gray font-nunito-sans">
-                        +1 234 567 890
+                        support@fujiyama-tech.com
+                    </p>
+                </div>
+                <div class="flex gap-1 items-center">
+                    <i class="fa-solid fa-location-dot text-primary-blue"></i>
+                    <p class="text-primary-gray font-nunito-sans">
+                        Jl. Teknologi No.88, Jakarta, Indonesia
                     </p>
                 </div>
             </div>
         </div>
+
+        
         <div class="space-y-4">
             <h4 class="font-semibold text-xl">
                 Follow Us
             </h4>
-            <div>
-                <p class="text-primary-gray font-nunito-sans max-w-[240px]">
-                    Bed ut perspiciatis unde omnis iste natus error doloremque lauda
-                </p>
-                
+            <p class="text-primary-gray font-nunito-sans max-w-[240px]">
+                Follow us on social media for the latest updates and project showcases.
+            </p>
+            <div class="flex gap-4 mt-2">
+                <a href="#" class="text-primary-blue text-lg hover:text-blue-700"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="text-primary-blue text-lg hover:text-blue-500"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-primary-blue text-lg hover:text-pink-600"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-primary-blue text-lg hover:text-blue-800"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>
-    <hr/>
-    <p class="text-primary-gray font-nunito-sans">
-        @copy 2024. petech.All Right Reserved
-    </p>
 
+    <hr/>
+
+    
+    <p class="text-primary-gray font-nunito-sans text-center">
+        &copy; 2024 Fujiyama Technology Solution. All rights reserved.
+    </p>
 </footer>

@@ -2,17 +2,18 @@
     <div class="container-slider relative min-h-[70vh]">
         <div class="container-items-slider relative">
             <x-features.home.hero-slide-item 
-                title="IT Consulting"
-                subtitle="Best IT Solutions"
-                description="For Your Petech"
+                title="Server Rental Solutions"
+                subtitle="Reliable & Scalable Hosting"
+                description="Powered by Fujiyama Technology Solution"
                 :image="asset('images/hero.jpg')"
             />
             <x-features.home.hero-slide-item 
-                title="IT Services Provider"
-                subtitle="Real Economy"
-                description="IT Solutions"
+                title="Free Web & App Development"
+                subtitle="With Server Subscription"
+                description="Boost Your Business with FTS"
                 :image="asset('images/hero-2.png')"
             />
+
         </div>
         <div class="control-container">
             <button class="slider-control prev">&lt;</button>

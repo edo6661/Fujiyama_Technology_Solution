@@ -1,24 +1,25 @@
 @php
 $products = [
     [
-        'title' => 'Super Technology',
-        'description' => 'Perspiciatis unde omnis iste natu error sit voluptatem accusantium doloremque laudantium totam rem aperiam',
-        'image' => '<i class="fa-solid fa-microchip"></i>',
+        'title' => 'Server Rental',
+        'description' => 'High-availability, secure, and scalable servers to support your business applications.',
+        'image' => '<i class="fa-solid fa-server"></i>',
         'link' => '#'
     ],
     [
-        'title' => 'Product Strategy',
-        'description' => 'Perspiciatis unde omnis iste natu error sit voluptatem accusantium doloremque laudantium totam rem aperiam',
-        'image' => '<i class="fa-solid fa-chess-board"></i>',
+        'title' => 'Free Website Development',
+        'description' => 'Professional website development included with every server subscription.',
+        'image' => '<i class="fa-solid fa-globe"></i>',
         'link' => '#'
     ],
     [
-        'title' => 'Product Launching',
-        'description' => 'Perspiciatis unde omnis iste natu error sit voluptatem accusantium doloremque laudantium totam rem aperiam',
-        'image' => '<i class="fa-solid fa-rocket"></i>',
+        'title' => 'Free Mobile App Creation',
+        'description' => 'We build Android/iOS apps to complement your online presence at no cost.',
+        'image' => '<i class="fa-solid fa-mobile-alt"></i>',
         'link' => '#'
     ]
 ];
+
 @endphp 
 <section id="what-we-do" class="relative px-4 ">
     <div class="absolute inset-0">
@@ -34,11 +35,12 @@ $products = [
             </p>
             <div class="space-y-2">
                 <h3 class="text-4xl font-bold">
-                    Discover Best Product 
+                    Build Your Digital Business
                 </h3>
                 <h3 class="text-4xl font-bold">
-                    Design Strategy
+                    With Our Hosting & Dev Solutions
                 </h3>
+
             </div>
         </div>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">

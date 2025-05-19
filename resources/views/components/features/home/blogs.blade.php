@@ -1,15 +1,16 @@
 
 <section id="blog" class="flex flex-col py-8 text-center space-y-4 px-4 ">
     <p class="font-semibold text-lg text-white">
-        Our latest Blog
+        FTS Blog & Updates
     </p>
     <div>
         <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
-            Our Recent Article
+            Latest Tech Insights
         </h3>
         <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
-            News & Tips
+            From Our Experts
         </h3>
+
     </div>
     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-12">
        
