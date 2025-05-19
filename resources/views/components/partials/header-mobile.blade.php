@@ -9,8 +9,8 @@ $navItems = [
 ]; 
 @endphp
 <div class="bg-primary-blue py-4 md:hidden flex items-center justify-between px-4 h-[72px]">
-    <h1 class="text-xl font-bold text-white">
-        petech
+    <h1 class="text-2xl font-bold text-white">
+        FTS
     </h1>
     <button class="nav-toggle">
         <i class="fa-solid fa-bars text-lg text-white"></i>

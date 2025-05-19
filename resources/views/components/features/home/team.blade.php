@@ -2,7 +2,7 @@
     <p class="font-semibold text-lg text-white">
         Our Team
     </p>
-    <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
+    <h3 class="md:text-3xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
         Meet Our Team
     </h3>
     <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-12">

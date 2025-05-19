@@ -34,10 +34,10 @@ $products = [
                 WHAT WE DO
             </p>
             <div class="space-y-2">
-                <h3 class="text-4xl font-bold">
+                <h3 class="text-3xl font-bold">
                     Build Your Digital Business
                 </h3>
-                <h3 class="text-4xl font-bold">
+                <h3 class="text-3xl font-bold">
                     With Our Hosting & Dev Solutions
                 </h3>
 

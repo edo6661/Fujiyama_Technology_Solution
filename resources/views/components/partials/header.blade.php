@@ -3,9 +3,9 @@
    
 
     <div class="scroll-header ">
-        <div class="bg-primary-blue py-2">
+        <div class="bg-primary-blue py-2 text-white font-semibold">
             <p class="text-center">
-                Welcome to petech, 25 Years Of Experience In IT Consulting & Solutions
+                Welcome to FTS
             </p>
         </div>
         <div class="flex bg-white items-center justify-around py-4">

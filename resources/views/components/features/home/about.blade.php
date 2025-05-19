@@ -15,7 +15,7 @@
             ABOUT FUJIYAMA TECHNOLOGY SOLUTION
         </p>
         <div class="space-y-4">
-            <h3 class="font-bold md:text-4xl text-3xl">
+            <h3 class="font-bold md:text-3xl text-3xl">
                 Your Partner for Digital Infrastructure
             </h3>
             <p class="text-primary-gray font-nunito-sans">

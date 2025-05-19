@@ -4,10 +4,10 @@
         FTS Blog & Updates
     </p>
     <div>
-        <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
+        <h3 class="md:text-3xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
             Latest Tech Insights
         </h3>
-        <h3 class="md:text-4xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
+        <h3 class="md:text-3xl lg:text-6xl sm:text-3xl text-xl font-bold text-white">
             From Our Experts
         </h3>
 
