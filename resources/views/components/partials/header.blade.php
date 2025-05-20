@@ -12,7 +12,6 @@
             <div>
                 <a href="/">
                     <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-full lg:h-12 h-8">
-                
                 </a>
             </div>
             <div class="flex items-center justify-between lg:gap-8 gap-4">
@@ -79,9 +78,9 @@
                         Dashboard
                     </a>
                 @else
-                    <a href="{{ route('login') }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
+                    {{-- <a href="{{ route('login') }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
                         Login
-                    </a>
+                    </a> --}}
                 @endif
               </div>
               
