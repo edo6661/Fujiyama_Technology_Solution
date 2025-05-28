@@ -16,7 +16,8 @@
       "src": "api/index.php",
       "use": "@vercel/php"
     }
-  ],
+  ], 
+  "regions": ["all"],
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
