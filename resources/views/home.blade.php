@@ -1,4 +1,4 @@
-@vite([ 'resources/js/app.js'])
+@vite(['resources/js/app.js'])
 
 <x-layouts.app title="Home">
     <x-features.home.hero/>
