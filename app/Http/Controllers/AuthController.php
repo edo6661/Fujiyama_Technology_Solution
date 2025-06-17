@@ -13,13 +13,8 @@ class AuthController extends Controller
     }
     public function signIn(LoginRequest $request)
     {
-        // Autentikasi user
         $request->authenticate();
-
-        // Regenerasi session ID untuk keamanan
         $request->session()->regenerate();
-
-        // Redirect berdasarkan intended URL atau ke dashboard
         return redirect()->intended(route('dashboard'));
     }
     public function logout(Request $request)
