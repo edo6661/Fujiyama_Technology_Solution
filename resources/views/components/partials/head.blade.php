@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="google-site-verification" content="arKKq7d_5bgmyQcgdMJZ_walQE7rRQ5VVwbAonjPZSs" />
 
-<title>{{ $title }} | PT. Fujiyama Technology Solutions</title>
+<title>{{ $title }} | Fujiyama Technology Solutions</title>
 
 @php
     $pageDescription = $description ?? 'PT. Fujiyama Technology Solutions (FTS) adalah partner terpercaya Anda untuk transformasi digital. Kami menyediakan solusi IT inovatif, termasuk pengembangan software, website, dan aplikasi mobile.';
