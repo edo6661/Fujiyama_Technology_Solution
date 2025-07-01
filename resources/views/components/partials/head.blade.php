@@ -2,11 +2,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="google-site-verification" content="arKKq7d_5bgmyQcgdMJZ_walQE7rRQ5VVwbAonjPZSs" />
 
-<title>{{ $title }} | Fujiyama Technology Solutions</title>
+<title>{{ $title }} | FTS</title>
 
 @php
-    $pageDescription = $description ?? 'PT. Fujiyama Technology Solutions (FTS) adalah partner terpercaya Anda untuk transformasi digital. Kami menyediakan solusi IT inovatif, termasuk pengembangan software, website, dan aplikasi mobile.';
+    $pageDescription = $description ?? 'PT. Fujiyama Technology Solutions (FTS) is your trusted partner for digital transformation. We provide innovative IT solutions, including software, website, and mobile application development.';
 @endphp
+
 <meta name="description" content="{{ $pageDescription }}" />
 
 <meta name="author" content="PT. Fujiyama Technology Solutions" />
@@ -17,12 +18,12 @@
 <link rel="canonical" href="{{ url()->current() }}" />
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ url('sitemap.xml') }}" />
 
-<link rel="icon" href="{{ asset('favicon/favicon.ico') }}" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
-<link rel="apple-touch-icon" href="{{ asset('favicon/apple-touch-icon.png') }}">
+<link rel="icon" href="{{ url('favicon/favicon.ico') }}" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url('favicon/favicon-32x32.png') }}">
+<link rel="apple-touch-icon" href="{{ url('favicon/apple-touch-icon.png') }}">
 <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}" />
 
-<meta property="og:title" content="{{ $title ?? 'Judul Default Halaman' }} | PT. Fujiyama Technology Solutions" />
+<meta property="og:title" content="{{ $title ?? 'Default Page Title' }}" />
 <meta property="og:description" content="{{ $pageDescription }}" />
 <meta property="og:url" content="{{ url()->current() }}" />
 <meta property="og:site_name" content="PT. Fujiyama Technology Solutions" />
@@ -30,7 +31,7 @@
 <meta property="og:image" content="{{ $og_image ?? asset('images/hero.jpg') }}" /> 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ $title ?? 'Judul Default Halaman' }} | PT. Fujiyama Technology Solutions" />
+<meta name="twitter:title" content="{{ $title ?? 'Default Page Title' }}" />
 <meta name="twitter:description" content="{{ $pageDescription }}" />
 <meta name="twitter:image" content="{{ $og_image ?? asset('images/hero.jpg') }}" /> 
 
