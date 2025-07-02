@@ -3,6 +3,7 @@
         <div class="container-items-slider relative">
             <x-features.home.hero-slide-item-revision 
                 title="Innovating Indonesia’s Digital Future – Together"
+                description="With the reliability of Japanese expertise × the power of Indonesian talent, we pioneer the cutting edge of technology"
                 :image="asset('images/hero.jpg')"
             />
         </div>
