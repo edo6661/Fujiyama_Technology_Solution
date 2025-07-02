@@ -1,5 +1,8 @@
 @props([
     'variant' => 'primary',
+    'tag' => 'a', // default sebagai anchor
+    'href' => '#',
+    'type' => 'button'
 ])
 
 @php
@@ -30,7 +33,8 @@
             $overlayClass .= ' bg-black';
             break;
     }
-    $textClass = 'relative z-10 md:px-6 md:py-4 px-4 py-2 transition-colors duration-500';
+    
+    $textClass = 'relative z-10 md:px-6 md:py-4 px-4 py-2 transition-colors duration-500 font-semibold block w-full h-fit';
     
     switch ($variant) {
         case 'primary':
@@ -46,11 +50,15 @@
 @endphp
 
 <div {{ $attributes->merge(['class' => $containerClass]) }}>
-  <div class="{{ $overlayClass }}"></div>
-
-  <div class="{{ $textClass }}">
-    <a class="font-semibold">
-      {{ $slot }}
-    </a>
-  </div>
+    <div class="{{ $overlayClass }}"></div>
+    
+    @if($tag === 'button')
+        <button type="{{ $type }}" class="{{ $textClass }}">
+            {{ $slot }}
+        </button>
+    @else
+        <a href="{{ $href }}" class="{{ $textClass }}">
+            {{ $slot }}
+        </a>
+    @endif
 </div>

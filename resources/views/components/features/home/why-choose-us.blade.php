@@ -50,9 +50,6 @@ $advantages = [
                     Digital Solutions Partner
                 </h3>
             </div>
-            <p class="text-primary-gray font-nunito-sans max-w-2xl">
-                Combining Japanese excellence with Indonesian expertise to deliver world-class digital solutions tailored for your success.
-            </p>
         </div>
         
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">

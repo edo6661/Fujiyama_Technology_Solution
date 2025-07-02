@@ -64,71 +64,31 @@ $socialMedia = [
             <p class="text-lg font-semibold text-primary-blue">
                 Contact Us
             </p>
-            <div class="space-y-2">
-                <h3 class="text-3xl font-bold">
-                    Get In Touch With Our
-                </h3>
-                <h3 class="text-3xl font-bold">
-                    Digital Solutions Team
-                </h3>
-            </div>
-            <p class="text-primary-gray font-nunito-sans max-w-2xl">
-                Please feel free to reach out for any challenges you face. We're here to help you transform your digital vision into reality.
-            </p>
         </div>
         
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-12">
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8 space-y-6">
-                <div class="space-y-2">
-                    <h4 class="text-2xl font-bold text-black">Send Us a Message</h4>
-                    <p class="text-primary-gray font-nunito-sans">
-                        Ready to start your digital transformation? Let's discuss your project.
-                    </p>
-                </div>
-                
-                <form class="space-y-4">
-                    <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
-                        <div>
-                            <label class="block text-sm font-semibold text-black mb-2">Full Name</label>
-                            <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary-blue transition-colors duration-300" placeholder="Your full name">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-black mb-2">Email Address</label>
-                            <input type="email" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary-blue transition-colors duration-300" placeholder="your.email@example.com">
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <div>
-                            <label class="block text-sm font-semibold text-black mb-2">Phone Number</label>
-                            <input type="tel" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary-blue transition-colors duration-300" placeholder="+62 XXX XXXX XXXX">
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-sm font-semibold text-black mb-2">Subject</label>
-                        <select class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary-blue transition-colors duration-300">
-                            <option>Select a service</option>
-                            <option>Custom Software Development</option>
-                            <option>Mobile Apps & Digital Platforms</option>
-                            <option>IT Consulting & System Integration</option>
-                            <option>Smart Government Solutions</option>
-                            <option>Digital Transformation</option>
-                        </select>
-                    </div>
-                    
-                    <div>
-                        <label class="block text-sm font-semibold text-black mb-2">Message</label>
-                        <textarea rows="5" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary-blue transition-colors duration-300 resize-none" placeholder="Tell us about your project or challenges..."></textarea>
-                    </div>
-                    
-                    <x-shared.link-button variant="primary" class="w-full">
-                        SEND MESSAGE
-                    </x-shared.link-button>
-                </form>
-            </div>
-            
             <div class="space-y-8">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div class="p-6 border-b border-gray-100">
+                        <h4 class="text-xl font-semibold text-black flex items-center gap-3">
+                            <i class="fa-solid fa-building text-primary-blue"></i>
+                            Our Office Location
+                        </h4>
+                    </div>
+                    <div class="relative overflow-hidden">
+                        <img 
+                            src="{{ asset('images/soho.png') }}" 
+                            alt="NEO SOHO Mall Building - Our Office Location"
+                            class="w-full h-80 object-cover transition-transform duration-500 hover:scale-105"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="text-sm font-medium">NEO SOHO Mall</p>
+                            <p class="text-xs opacity-90">Central Park, Jakarta Barat</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="grid grid-cols-1 gap-4">
                     @foreach ($contactInfo as $info)
                         <x-features.home.contact-info-item
@@ -138,28 +98,51 @@ $socialMedia = [
                         />
                     @endforeach
                 </div>
-                
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                    <div class="p-6 border-b border-gray-100">
-                        <h4 class="text-xl font-semibold text-black flex items-center gap-3">
-                            <i class="fa-solid fa-map-location-dot text-primary-blue"></i>
-                            Find Us Here
-                        </h4>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8 space-y-6">
+                    <div class="space-y-2">
+                        <h4 class="text-2xl font-bold text-black">Send Us a Message</h4>
+                        <p class="text-primary-gray font-nunito-sans">
+                            Ready to start your digital transformation? Let's discuss your project.
+                        </p>
                     </div>
-                    <div class="aspect-video">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4038.9787255259166!2d106.78743847507211!3d-6.174962993812413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65ee1c07a31%3A0x2c4c67f4d94e8e65!2sNEO%20SOHO%20Mall!5e1!3m2!1sid!2sid!4v1751427440468!5m2!1sid!2sid" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            class="w-full h-full">
-                        </iframe>
-                    </div>
+                    
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-black mb-2">Full Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary-blue transition-colors duration-300" placeholder="Your full name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-black mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary-blue transition-colors duration-300" placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-black mb-2">Subject</label>
+                            <select class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary-blue transition-colors duration-300">
+                                <option>Select a service</option>
+                                <option>Custom Software Development</option>
+                                <option>Mobile Apps & Digital Platforms</option>
+                                <option>IT Consulting & System Integration</option>
+                                <option>Smart Government Solutions</option>
+                                <option>Digital Transformation</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-black mb-2">Message</label>
+                            <textarea rows="7" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-primary-blue transition-colors duration-300 resize-none" placeholder="Tell us about your project or challenges..."></textarea>
+                        </div>
+                        
+                        <x-shared.link-button variant="primary" class="w-full">
+                            SEND MESSAGE
+                        </x-shared.link-button>
+                    </form>
                 </div>
-                
+
                 <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
                     <h4 class="text-xl font-semibold text-black mb-4">Connect With Us</h4>
                     <div class="flex gap-4">
