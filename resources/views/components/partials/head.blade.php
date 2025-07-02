@@ -18,10 +18,10 @@
 <link rel="canonical" href="{{ url()->current() }}" />
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ url('sitemap.xml') }}" />
 
-<link rel="icon" href="{{ url('favicon/favicon.ico') }}" sizes="any">
+<link rel="icon" type="image/x-icon" href="{{ url('favicon.ico') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url('favicon/favicon-16x16.png') }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ url('favicon/favicon-32x32.png') }}">
-<link rel="apple-touch-icon" href="{{ url('favicon/apple-touch-icon.png') }}">
-<link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url('favicon/apple-touch-icon.png') }}"><link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}" />
 
 <meta property="og:title" content="{{ $title ?? 'Default Page Title' }}" />
 <meta property="og:description" content="{{ $pageDescription }}" />
