@@ -109,7 +109,7 @@
         left: 20px;
     }
 </style>
-
+{{-- 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const slider = document.querySelector('.container-items-slider');
@@ -161,4 +161,4 @@
             }
         });
     });
-</script>
+</script> --}}
