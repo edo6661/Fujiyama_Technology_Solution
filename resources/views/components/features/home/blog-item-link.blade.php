@@ -1,5 +1,6 @@
-<a  
-    {{ $attributes->merge(['class' => 'font-medium text-primary-gray']) }}
->
-    READ MORE <span class="text-primary-blue ml-1.5">+</span>
-</a>
+<div class="pt-2">
+    <button class="text-primary-blue font-semibold text-sm hover:text-primary-blue/80 transition-colors duration-300 flex items-center gap-2 group/btn">
+        Learn More 
+        <i class="fa-solid fa-arrow-right text-xs group-hover/btn:translate-x-1 transition-transform duration-300"></i>
+    </button>
+</div>

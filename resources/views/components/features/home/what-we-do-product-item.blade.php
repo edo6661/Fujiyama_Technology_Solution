@@ -5,8 +5,8 @@
     'link' => null,
     
 ])
-<div class="flex items-center justify-center flex-col text-center gap-6 px-8 py-12 bg-white rounded-md shadow-sm shadow-muted-foreground">
-    <h4 class="text-black text-xl font-semibold">
+<div class="group flex items-center justify-center flex-col text-center gap-6 px-8 py-12 bg-white rounded-md shadow-sm shadow-muted-foreground">
+    <h4 class="text-black text-xl font-semibold group-hover:text-primary-blue transition-colors duration-300">
         {{ $title }}
     </h4>
     <p class="font-nunito-sans text-primary-gray ">

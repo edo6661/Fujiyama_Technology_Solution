@@ -64,12 +64,6 @@
                 @endforeach
             </ul>
             <div class="flex items-center gap-4">
-                <flux:custom-button
-                    
-                >
-                    GET STARTED
-                </flux:custom-button>
-              
                 <div class="bg-primary-blue px-4 py-4 rounded-md">
                   <i class="fa-solid fa-magnifying-glass text-lg text-white"></i>
                 </div>

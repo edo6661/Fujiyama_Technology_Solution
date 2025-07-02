@@ -30,7 +30,6 @@
             $overlayClass .= ' bg-black';
             break;
     }
-    // Mendefinisikan kelas untuk teks
     $textClass = 'relative z-10 md:px-6 md:py-4 px-4 py-2 transition-colors duration-500';
     
     switch ($variant) {
