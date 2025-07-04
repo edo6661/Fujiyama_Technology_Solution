@@ -59,7 +59,7 @@
   "logo": "{{ asset('images/logo.png') }}",
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+62-812-3456-7890", 
+    "telephone": "0895-2933-6179", 
     "contactType": "customer service",
     "areaServed": "ID",
     "availableLanguage": ["Indonesian", "English"]

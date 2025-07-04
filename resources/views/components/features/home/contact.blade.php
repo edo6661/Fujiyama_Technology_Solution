@@ -7,7 +7,7 @@ $contactInfo = [
     ],
     [
         'title' => 'Phone Number',
-        'content' => '+62 21 1234 5678',
+        'content' => '0895-2933-61798',
         'icon' => '<i class="fa-solid fa-phone"></i>',
     ],
     [

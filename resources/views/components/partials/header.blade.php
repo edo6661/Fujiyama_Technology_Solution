@@ -17,7 +17,7 @@
             <div class="flex items-center justify-between lg:gap-8 gap-4">
                 <x-nav-icon-content
                     key="Phone Number"
-                    value="+1 234 567 890"
+                    value="0895-2933-6179"
                 >
                     <x-slot name="icon">
                         <i class="fa-solid fa-phone"></i>

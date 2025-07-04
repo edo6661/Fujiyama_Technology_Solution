@@ -51,7 +51,7 @@
                 <div class="flex gap-1 items-center">
                     <i class="fa-solid fa-phone text-primary-blue"></i>
                     <p class="text-primary-gray font-nunito-sans">
-                        +62 812-3456-7890
+                        +0895-2933-6179
                     </p>
                 </div>
                 <div class="flex gap-1 items-center">
