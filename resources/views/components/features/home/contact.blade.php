@@ -7,12 +7,12 @@ $contactInfo = [
     ],
     [
         'title' => 'Phone Number',
-        'content' => '0895-2933-61798',
+        'content' => ' 0895-2933-6179',
         'icon' => '<i class="fa-solid fa-phone"></i>',
     ],
     [
         'title' => 'Email Address',
-        'content' => 'info@fts.co.id',
+        'content' => 'azmi@fbe.co.id',
         'icon' => '<i class="fa-solid fa-envelope"></i>',
     ],
     [

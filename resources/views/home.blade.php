@@ -8,6 +8,6 @@
     <x-features.home.why-choose-us/>
     {{-- <x-features.home.banner-consultation/> --}}
     {{-- <x-features.home.team/> --}}
-    <x-features.home.blogs :blogs="$blogs"/>
+    {{-- <x-features.home.blogs :blogs="$blogs"/> --}}
     <x-features.home.contact/>
 </x-layouts.app>

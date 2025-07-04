@@ -25,7 +25,7 @@
                 </x-nav-icon-content>
                 <x-nav-icon-content
                     key="Email"
-                    value="email@gmail.com"
+                    value="azmi@fbe.co.id"
                 >
                     <x-slot name="icon">
                         <i class="fa-solid fa-envelope"></i>                    
@@ -33,7 +33,7 @@
                 </x-nav-icon-content>
                 <x-nav-icon-content
                     key="Locations"
-                    value="205 Main Street, USA"
+                    value="Neo Soho Mall"
                 >
                     <x-slot name="icon">
                         <i class="fa-solid fa-location-dot"></i>                    
@@ -51,7 +51,7 @@
                         'Home' => "/#",
                         'About' => '/#about',
                         'Services' => '/#what-we-do',
-                        'Blog' => '/#blog',
+                        // 'Blog' => '/#blog',
                         'Contact' => '/#footer',
                     ]; 
                 @endphp
@@ -64,9 +64,9 @@
                 @endforeach
             </ul>
             <div class="flex items-center gap-4">
-                <div class="bg-primary-blue px-4 py-4 rounded-md">
+                {{-- <div class="bg-primary-blue px-4 py-4 rounded-md">
                   <i class="fa-solid fa-magnifying-glass text-lg text-white"></i>
-                </div>
+                </div> --}}
                 @if(auth()->check())
                     <a href="{{ route('dashboard') }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
                         Dashboard

@@ -51,19 +51,19 @@
                 <div class="flex gap-1 items-center">
                     <i class="fa-solid fa-phone text-primary-blue"></i>
                     <p class="text-primary-gray font-nunito-sans">
-                        +0895-2933-6179
+                        0895-2933-6179
                     </p>
                 </div>
                 <div class="flex gap-1 items-center">
                     <i class="fa-solid fa-envelope text-primary-blue"></i>
                     <p class="text-primary-gray font-nunito-sans">
-                        support@fujiyama-tech.com
+                        azmi@fbe.co.id
                     </p>
                 </div>
                 <div class="flex gap-1 items-center">
                     <i class="fa-solid fa-location-dot text-primary-blue"></i>
                     <p class="text-primary-gray font-nunito-sans">
-                        Jl. Teknologi No.88, Jakarta, Indonesia
+                        NEO SOHO Mall
                     </p>
                 </div>
             </div>
