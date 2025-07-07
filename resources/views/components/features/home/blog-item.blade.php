@@ -13,9 +13,6 @@
             <h3 class="font-semibold md:text-3xl text-2xl text-white">
                 {{ $blog->title_trim }}
             </h3>
-            <p class="font-nunito-sans text-tertiary-gray">
-                {{ $blog->description_trim }}
-            </p>
             <x-features.home.blog-item-link  class="text-white"/>
         </div>    
     </div>

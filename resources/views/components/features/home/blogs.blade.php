@@ -1,5 +1,5 @@
-
-<section id="blog" class="flex flex-col py-8 text-center space-y-4 px-4 ">
+@if($blogs->isNotEmpty())
+    <section id="blog" class="flex flex-col py-8 text-center space-y-4 px-4 ">
     <p class="font-semibold text-lg text-white">
         FTS Blog & Updates
     </p>
@@ -28,3 +28,4 @@
         background: url("{{ asset('images/blog.jpg') }}") no-repeat center center/cover;
     }
 </style>
+@endif

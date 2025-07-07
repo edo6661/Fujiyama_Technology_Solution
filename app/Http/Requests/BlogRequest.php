@@ -21,7 +21,7 @@ class BlogRequest extends FormRequest
     {
         $rules = [
             'title' => 'required|string|max:255',
-            'description' => 'required|string',
+            'content' => 'required|string',
         ];
 
         // Only require image during creation, not update

@@ -63,7 +63,6 @@
                                 @endif
                                 <div>
                                     <a href="{{ route('blogs.show', $blog) }}" class="text-blue-600 hover:underline font-medium">{{ $blog->title }}</a>
-                                    <div class="text-sm text-gray-500 truncate max-w-md">{{ Str::limit($blog->excerpt ?? '', 60) }}</div>
                                 </div>
                             </div>
                         </td>
@@ -77,7 +76,7 @@
                             </span>
                         </td>
                         <td class="py-4 px-6 text-sm text-gray-600">
-                            {{ $blog->user->name ?? 'Admin' }}
+                            {{ $blog->users->name ?? 'Admin' }}
                         </td>
                         <td class="py-4 px-6 text-center">
                             <div class="flex justify-center space-x-2">

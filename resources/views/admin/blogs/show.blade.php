@@ -47,9 +47,6 @@
                             
                             <div>
                                 <h3 class="text-lg font-medium text-gray-900">{{ __('Deskripsi') }}</h3>
-                                <div class="mt-1 prose prose-sm max-w-none text-gray-600">
-                                    <p>{{ $blog->description }}</p>
-                                </div>
                             </div>
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

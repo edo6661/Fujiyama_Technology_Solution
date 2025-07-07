@@ -18,10 +18,9 @@
             <div class="mb-12">
                 <img src="{{ $blog->image_url }}" alt="{{ $blog->title }}" class="w-full h-auto max-h-[500px] object-cover rounded-lg">
             </div>
-            
-            <p class="text-black font-nunito-sans text-lg mb-8">
-                {{ $blog->description }}
-            </p>
+            <div>
+                {!! $blog->content !!}
+            </div>
         </div>
     </div>
 
