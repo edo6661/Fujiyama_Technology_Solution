@@ -160,9 +160,7 @@
                                 @error('content')
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                                 @enderror
-                                <p class="mt-1 text-sm text-gray-500">
-                                    {{ __('Gunakan toolbar di atas untuk memformat teks dengan berbagai pilihan font, ukuran, warna, dan alignment.') }}
-                                </p>
+                               
                             </div>
                             
                             <div>
@@ -213,28 +211,28 @@
     </div>
     
     <script>
-        // Wait for DOM to load
+        
         document.addEventListener('DOMContentLoaded', function() {
-            // Check if Quill is available
+            
             if (typeof window.Quill !== 'undefined') {
-                // Define custom font options
+                
                 const Font = Quill.import('formats/font');
                 Font.whitelist = ['serif', 'monospace'];
                 Quill.register(Font, true);
                 
-                // Define custom size options
+                
                 const Size = Quill.import('formats/size');
                 Size.whitelist = ['small', 'medium', 'large', 'huge'];
                 Quill.register(Size, true);
                 
-                // Initialize Quill editor with comprehensive modules
+                
                 const quill = new window.Quill('#editor', {
                     theme: 'snow',
                     modules: {
                         toolbar: {
                             container: '#toolbar',
                             handlers: {
-                                // Custom image handler
+                                
                                 image: function() {
                                     const input = document.createElement('input');
                                     input.setAttribute('type', 'file');
@@ -273,27 +271,26 @@
                         'quote', 'code-block', 'code',
                         'link', 'image', 'video', 'formula'
                     ],
-                    placeholder: 'Tulis konten blog Anda di sini...'
                 });
                 
-                // Sync editor content with form
+                
                 quill.on('text-change', function() {
                     const content = quill.root.innerHTML;
                     document.getElementById('content').value = content;
                 });
                 
-                // Set initial content if exists
+                
                 const initialContent = document.getElementById('content').value;
                 if (initialContent) {
                     quill.root.innerHTML = initialContent;
                 }
                 
-                // Ensure content is synced before form submission
+                
                 document.querySelector('form').addEventListener('submit', function(e) {
                     const content = quill.root.innerHTML;
                     document.getElementById('content').value = content;
                     
-                    // Validate content is not empty
+                    
                     if (quill.getText().trim().length === 0) {
                         e.preventDefault();
                         alert('Content tidak boleh kosong!');
@@ -301,21 +298,19 @@
                     }
                 });
                 
-                // Auto-save functionality (optional)
+                
                 let autoSaveTimer;
                 quill.on('text-change', function() {
                     clearTimeout(autoSaveTimer);
                     autoSaveTimer = setTimeout(function() {
-                        // Auto-save logic here if needed
+                        
                         console.log('Auto-saving...');
-                    }, 5000); // Save after 5 seconds of inactivity
+                    }, 5000); 
                 });
                 
             } else {
                 console.error('Quill is not loaded. Please check your imports.');
-                // Fallback to textarea
-                document.getElementById('editor-container').innerHTML = 
-                    '<textarea name="content" id="content" class="w-full h-64 p-3 border border-gray-300 rounded-md" placeholder="Tulis konten blog Anda di sini..." required></textarea>';
+              
             }
         });
         
@@ -326,14 +321,14 @@
             if (input.files && input.files[0]) {
                 const file = input.files[0];
                 
-                // Validate file size (2MB max)
+                
                 if (file.size > 2 * 1024 * 1024) {
                     alert('Ukuran file terlalu besar! Maksimal 2MB.');
                     input.value = '';
                     return;
                 }
                 
-                // Validate file type
+                
                 const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif'];
                 if (!allowedTypes.includes(file.type)) {
                     alert('Format file tidak didukung! Gunakan JPG, PNG, atau GIF.');

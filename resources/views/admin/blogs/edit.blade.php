@@ -169,9 +169,7 @@
                                 @error('content')
                                     <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                                 @enderror
-                                <p class="mt-1 text-sm text-gray-500">
-                                    {{ __('Gunakan toolbar di atas untuk memformat teks dengan berbagai pilihan font, ukuran, warna, dan alignment.') }}
-                                </p>
+                                
                             </div>
                             
                             <div>

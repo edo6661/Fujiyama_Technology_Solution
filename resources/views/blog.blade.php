@@ -14,33 +14,8 @@
                     </h1>
                 </div>
             </div>
-
-            <div class="mb-12">
-                <img src="{{ $blog->image_url }}" alt="{{ $blog->title }}" class="w-full h-auto max-h-[500px] object-cover rounded-lg">
-            </div>
             <div>
                 {!! $blog->content !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-primary-indigo py-8">
-        <div class="mx-auto px-4 md:px-8">
-            <div class="mb-12 flex justify-between items-center">
-                <h2 class="font-semibold text-3xl text-white">More Blog Posts</h2>
-                <a href="{{ route('blogs') }}" class="text-white underline">View All</a>
-            </div>
-
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-12">
-                @if(isset($moreBlogs) && $moreBlogs->count() > 0)
-                    @foreach($moreBlogs->take(3) as $moreBlog)
-                    <x-features.home.blog-item
-                    :blog="$moreBlog"
-                    />
-                    @endforeach
-                @else
-                    <p class="text-white">No more blog posts found.</p>
-                @endif
             </div>
         </div>
     </div>

@@ -68,9 +68,9 @@
                   <i class="fa-solid fa-magnifying-glass text-lg text-white"></i>
                 </div> --}}
                 @if(auth()->check())
-                    <a href="{{ route('dashboard') }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
+                    {{-- <a href="{{ route('dashboard') }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
                         Dashboard
-                    </a>
+                    </a> --}}
                 @else
                     {{-- <a href="{{ route('login') }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
                         Login
