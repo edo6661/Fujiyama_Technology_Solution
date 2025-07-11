@@ -12,7 +12,7 @@ $contactInfo = [
     ],
     [
         'title' => 'Email Address',
-        'content' => 'azmi@fbe.co.id',
+        'content' => 'info@fts.biz.id',
         'icon' => '<i class="fa-solid fa-envelope"></i>',
     ],
     [

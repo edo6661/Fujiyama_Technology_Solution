@@ -57,7 +57,7 @@
                 <div class="flex gap-1 items-center">
                     <i class="fa-solid fa-envelope text-primary-blue"></i>
                     <p class="text-primary-gray font-nunito-sans">
-                        azmi@fbe.co.id
+                        info@fts.biz.id
                     </p>
                 </div>
                 <div class="flex gap-1 items-center">

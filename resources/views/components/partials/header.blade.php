@@ -25,7 +25,7 @@
                 </x-nav-icon-content>
                 <x-nav-icon-content
                     key="Email"
-                    value="azmi@fbe.co.id"
+                    value="info@fts.biz.id"
                 >
                     <x-slot name="icon">
                         <i class="fa-solid fa-envelope"></i>                    
