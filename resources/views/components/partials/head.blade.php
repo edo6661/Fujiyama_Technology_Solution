@@ -5,7 +5,7 @@
 <title>{{ $title }} | FTS</title>
 
 @php
-    $pageDescription = $description ?? 'PT. Fujiyama Technology Solutions (FTS) is your trusted partner for digital transformation. We provide innovative IT solutions, including software, website, and mobile application development.';
+    $pageDescription = $description ?? 'PT Fujiyama Technology Solutions (FTS) is your trusted partner for digital transformation. We provide innovative IT solutions, including software, website, and mobile application development.';
 @endphp
 
 <meta name="description" content="{{ $pageDescription }}" />
