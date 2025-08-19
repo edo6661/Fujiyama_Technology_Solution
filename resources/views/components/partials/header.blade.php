@@ -1,6 +1,6 @@
 <header class="bg-primary-indigo">
-    <x-partials.header-mobile/>
-   
+    <x-partials.header-mobile />
+
 
     <div class="scroll-header ">
         <div class="bg-primary-blue py-2 text-white font-semibold">
@@ -11,32 +11,23 @@
         <div class="flex bg-white items-center justify-around py-4">
             <div>
                 <a href="/">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-full lg:h-12 h-8">
+                    <img src="{{ asset('images/logo-fts.jpg') }}" alt="Logo" class="w-full lg:h-20 h-16">
                 </a>
             </div>
             <div class="flex items-center justify-between lg:gap-8 gap-4">
-                <x-nav-icon-content
-                    key="Phone Number"
-                    value="0895-2933-6179"
-                >
+                <x-nav-icon-content key="Phone Number" value="0895-2933-6179">
                     <x-slot name="icon">
                         <i class="fa-solid fa-phone"></i>
                     </x-slot>
                 </x-nav-icon-content>
-                <x-nav-icon-content
-                    key="Email"
-                    value="info@fts.biz.id"
-                >
+                <x-nav-icon-content key="Email" value="info@fts.biz.id">
                     <x-slot name="icon">
-                        <i class="fa-solid fa-envelope"></i>                    
+                        <i class="fa-solid fa-envelope"></i>
                     </x-slot>
                 </x-nav-icon-content>
-                <x-nav-icon-content
-                    key="Locations"
-                    value="Neo Soho Mall"
-                >
+                <x-nav-icon-content key="Locations" value="Neo Soho Mall">
                     <x-slot name="icon">
-                        <i class="fa-solid fa-location-dot"></i>                    
+                        <i class="fa-solid fa-location-dot"></i>
                     </x-slot>
                 </x-nav-icon-content>
             </div>
@@ -48,18 +39,19 @@
             <ul class="items-center flex gap-4">
                 @php
                     $navItems = [
-                        'Home' => "/#",
+                        'Home' => '/#',
                         'About' => '/#about',
                         'Services' => '/#what-we-do',
                         // 'Blog' => '/#blog',
                         'Contact' => '/#footer',
-                    ]; 
+                    ];
                 @endphp
                 @foreach ($navItems as $name => $link)
                     <li>
-                        <a href="{{ $link }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
+                        <a href="{{ $link }}"
+                            class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
                             {{ $name }}
-                        </a>    
+                        </a>
                     </li>
                 @endforeach
             </ul>
@@ -67,7 +59,7 @@
                 {{-- <div class="bg-primary-blue px-4 py-4 rounded-md">
                   <i class="fa-solid fa-magnifying-glass text-lg text-white"></i>
                 </div> --}}
-                @if(auth()->check())
+                @if (auth()->check())
                     {{-- <a href="{{ route('dashboard') }}" class="text-white font-nunito-sans text-lg hover:text-primary-blue transition-colors duration-300 ease-in-out font-extrabold">
                         Dashboard
                     </a> --}}
@@ -76,11 +68,11 @@
                         Login
                     </a> --}}
                 @endif
-              </div>
-              
+            </div>
+
         </div>
     </nav>
-    
+
 </header>
 
 <script>
@@ -88,18 +80,18 @@
         const scrollHeader = document.querySelector('.scroll-header');
         const stickyNav = document.querySelector('.sticky-nav');
         let headerHeight = scrollHeader.offsetHeight;
-        
-        const scrollSensitivity = 50; 
-        
+
+        const scrollSensitivity = 50;
+
         function updateHeaderPosition() {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
+
             if (scrollTop > scrollSensitivity) {
                 scrollHeader.style.transform = 'translateY(-100%)';
-                scrollHeader.style.display = 'none'; 
+                scrollHeader.style.display = 'none';
                 stickyNav.classList.add('fixed', 'top-0');
                 document.body.classList.add('nav-fixed');
-                
+
                 const mainContent = document.querySelector('main');
                 if (mainContent) {
                     const navHeight = stickyNav.offsetHeight;
@@ -110,36 +102,38 @@
                 scrollHeader.style.display = 'block';
                 stickyNav.classList.remove('fixed', 'top-0');
                 document.body.classList.remove('nav-fixed');
-                
+
                 const mainContent = document.querySelector('main');
                 if (mainContent) {
                     mainContent.style.marginTop = '0';
                 }
             }
         }
-        
+
         window.addEventListener('scroll', updateHeaderPosition);
-        
+
         window.addEventListener('resize', function() {
             headerHeight = scrollHeader.offsetHeight;
             updateHeaderPosition();
         });
-        
+
         updateHeaderPosition();
     });
 </script>
 
 <style>
-    @media (width >= 48rem) {
+    @media (width >=48rem) {
         .scroll-header {
             display: block;
         }
     }
-    @media (width <= 48rem) {
+
+    @media (width <=48rem) {
         .scroll-header {
             display: none !important;
         }
     }
+
     .scroll-header {
         transition: transform 0.3s ease;
         will-change: transform;
@@ -147,23 +141,23 @@
         overflow: hidden;
     }
 
-    
+
     .sticky-nav {
         transition: all 0.3s ease;
         will-change: transform, box-shadow;
     }
-    
+
     .sticky-nav.fixed {
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
+
     .nav-icon i {
-        font-size: 1rem !important; 
+        font-size: 1rem !important;
         width: 1.5em;
-        text-align: center; 
+        text-align: center;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         color: white;
     }
-
 </style>
