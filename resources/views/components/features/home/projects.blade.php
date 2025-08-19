@@ -1,50 +1,36 @@
 @php
-$projectCategories = [
-    [
-        'title' => 'Government Systems',
-        'description' => 'e-Government portals, digital licensing, and public data platforms that enhance public service efficiency.',
-        'icon' => '<i class="fa-solid fa-building-columns"></i>',
-        'projects' => [
-            'Digital Licensing System',
-            'Public Data Portal',
-            'e-Government Services'
+    $projectCategories = [
+        [
+            'title' => 'Government Systems',
+            'description' =>
+                'e-Government portals, digital licensing, and public data platforms that enhance public service efficiency.',
+            'icon' => '<i class="fa-solid fa-building-columns"></i>',
+            'projects' => ['Digital Licensing System', 'Public Data Portal', 'e-Government Services'],
+            'image' => 'images/projects/government-mockup.jpg',
         ],
-        'image' => 'images/projects/government-mockup.jpg'
-    ],
-    [
-        'title' => 'Enterprise Solutions',
-        'description' => 'Custom ERP, CRM, and logistics management systems tailored for business optimization.',
-        'icon' => '<i class="fa-solid fa-building"></i>',
-        'projects' => [
-            'Custom ERP System',
-            'CRM Solutions',
-            'Logistics Management'
+        [
+            'title' => 'Enterprise Solutions',
+            'description' => 'Custom ERP, CRM, and logistics management systems tailored for business optimization.',
+            'icon' => '<i class="fa-solid fa-building"></i>',
+            'projects' => ['Custom ERP System', 'CRM Solutions', 'Logistics Management'],
+            'image' => 'images/projects/enterprise-mockup.jpg',
         ],
-        'image' => 'images/projects/enterprise-mockup.jpg'
-    ],
-    [
-        'title' => 'Community & Social Platforms',
-        'description' => 'Mobile apps for communities and social innovation projects connecting people nationwide.',
-        'icon' => '<i class="fa-solid fa-users-gear"></i>',
-        'projects' => [
-            'Community Mobile Apps',
-            'Social Innovation Platform',
-            'Digital Community Hub'
+        [
+            'title' => 'Community & Social Platforms',
+            'description' => 'Mobile apps for communities and social innovation projects connecting people nationwide.',
+            'icon' => '<i class="fa-solid fa-users-gear"></i>',
+            'projects' => ['Community Mobile Apps', 'Social Innovation Platform', 'Digital Community Hub'],
+            'image' => 'images/projects/community-mockup.jpg',
         ],
-        'image' => 'images/projects/community-mockup.jpg'
-    ],
-    [
-        'title' => 'Technology Integrations',
-        'description' => 'AI, IoT, and blockchain solutions specifically adapted to the Indonesian market landscape.',
-        'icon' => '<i class="fa-solid fa-microchip"></i>',
-        'projects' => [
-            'AI-Powered Analytics',
-            'IoT Smart Solutions',
-            'Blockchain Integration'
+        [
+            'title' => 'Technology Integrations',
+            'description' =>
+                'AI, IoT, and blockchain solutions specifically adapted to the Indonesian market landscape.',
+            'icon' => '<i class="fa-solid fa-microchip"></i>',
+            'projects' => ['AI-Powered Analytics', 'IoT Smart Solutions', 'Blockchain Integration'],
+            'image' => 'images/projects/technology-mockup.jpg',
         ],
-        'image' => 'images/projects/technology-mockup.jpg'
-    ],
-];
+    ];
 @endphp
 
 <section id="projects" class="relative px-4 py-16">
@@ -55,7 +41,7 @@ $projectCategories = [
     <div class="absolute bottom-20 left-12 animate-pulse top-bottom hidden lg:block">
         <div class="w-16 h-16 bg-primary-blue/15 rounded-full"></div>
     </div>
-    
+
     <div class="relative z-10 text-black space-y-12">
         <div class="flex flex-col items-center justify-center text-center gap-4">
             <p class="text-lg font-semibold text-primary-blue">
@@ -70,19 +56,14 @@ $projectCategories = [
                 </h3>
             </div>
         </div>
-        
+
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
             @foreach ($projectCategories as $category)
-                <x-features.home.project-category-item
-                    :title="$category['title']"
-                    :description="$category['description']"
-                    :icon="$category['icon']"
-                    :projects="$category['projects']"
-                    :image="$category['image']"
-                />
+                <x-features.home.project-category-item :title="$category['title']" :description="$category['description']" :icon="$category['icon']"
+                    :projects="$category['projects']" :image="$category['image']" />
             @endforeach
         </div>
-        
+
         <div class="flex justify-center mt-12">
             <x-shared.link-button variant="primary" class="w-fit">
                 VIEW ALL PROJECTS
@@ -95,18 +76,30 @@ $projectCategories = [
     .rotate {
         animation: rotate 8s linear infinite;
     }
-    
+
     .top-bottom {
         animation: topBottom 6s ease-in-out infinite;
     }
-    
+
     @keyframes rotate {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
     }
-    
+
     @keyframes topBottom {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-20px); }
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
     }
 </style>

@@ -6,28 +6,28 @@
     'image' => null,
 ])
 
-<div class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-primary-blue/20">
+<div
+    class="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-primary-blue/20">
     <div class="relative overflow-hidden">
-        <div class="aspect-video bg-gradient-to-br from-primary-blue/10 to-primary-blue/5 flex items-center justify-center">
-            {{-- Placeholder untuk mockup image --}}
-            <div class="w-full h-full bg-gray-100 flex items-center justify-center">
-                <div class="container-project-icon">
-                    {!! $icon !!}
-                </div>
-            </div>
+        <div
+            class="aspect-video bg-gradient-to-br from-primary-blue/10 to-primary-blue/5 flex items-center justify-center">
             {{-- Uncomment ketika image sudah tersedia --}}
-            {{-- <img src="{{ asset($image) }}" alt="{{ $title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" /> --}}
+            <img src="{{ asset($image) }}" alt="{{ $title }}"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
         </div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div
+            class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        </div>
     </div>
-    
+
     <div class="p-6 space-y-4">
         <div class="flex items-start gap-4">
             <div class="container-category-icon flex-shrink-0 mt-1">
                 {!! $icon !!}
             </div>
             <div class="space-y-2">
-                <h4 class="text-black text-xl font-semibold group-hover:text-primary-blue transition-colors duration-300">
+                <h4
+                    class="text-black text-xl font-semibold group-hover:text-primary-blue transition-colors duration-300">
                     {{ $title }}
                 </h4>
                 <p class="font-nunito-sans text-primary-gray leading-relaxed text-sm">
@@ -35,7 +35,7 @@
                 </p>
             </div>
         </div>
-        
+
         <div class="space-y-2">
             <p class="text-sm font-semibold text-primary-blue">Key Projects:</p>
             <ul class="space-y-1">
@@ -47,11 +47,13 @@
                 @endforeach
             </ul>
         </div>
-        
+
         <div class="pt-2">
-            <button class="text-primary-blue font-semibold text-sm hover:text-primary-blue/80 transition-colors duration-300 flex items-center gap-2 group/btn">
-                Learn More 
-                <i class="fa-solid fa-arrow-right text-xs group-hover/btn:translate-x-1 transition-transform duration-300"></i>
+            <button
+                class="text-primary-blue font-semibold text-sm hover:text-primary-blue/80 transition-colors duration-300 flex items-center gap-2 group/btn">
+                Learn More
+                <i
+                    class="fa-solid fa-arrow-right text-xs group-hover/btn:translate-x-1 transition-transform duration-300"></i>
             </button>
         </div>
     </div>
@@ -63,13 +65,13 @@
         color: var(--primary-blue);
         opacity: 0.3;
     }
-    
+
     .container-category-icon i {
         font-size: 1.5rem;
         color: var(--primary-blue);
         transition: transform 0.3s ease;
     }
-    
+
     .group:hover .container-category-icon i {
         transform: scale(1.1);
     }
