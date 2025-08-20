@@ -33,7 +33,6 @@
             </div>
         </div>
     </div>
-    @if(request()->routeIs('home'))
     <nav class="bg-primary-indigo py-4 sticky-nav w-full z-50 md:block hidden">
         <div class="flex items-center justify-center lg:gap-16 gap-8">
             <ul class="items-center flex gap-4">
@@ -73,7 +72,6 @@
 
         </div>
     </nav>
-    @endif
 
 </header>
 

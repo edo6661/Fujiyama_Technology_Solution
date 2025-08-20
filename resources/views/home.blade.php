@@ -7,6 +7,7 @@
     <x-features.home.projects />
     <x-features.home.why-choose-us />
     <x-features.home.company />
+    {{-- <x-features.home.team /> --}}
 
     {{-- <x-features.home.banner-consultation/> --}}
     {{-- <x-features.home.team/> --}}
