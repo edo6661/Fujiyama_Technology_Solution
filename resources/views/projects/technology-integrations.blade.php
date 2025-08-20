@@ -45,7 +45,7 @@
                     </ul>
                 </div>
                 <div class="relative">
-                    <img src="{{ asset('images/projects/integration-mockup.jpg') }}" 
+                    <img src="{{ asset('images/projects/technology-mockup.jpg') }}" 
                          alt="Technology Integrations" 
                          class="w-full rounded-lg shadow-xl max-h-[420px]">
                 </div>

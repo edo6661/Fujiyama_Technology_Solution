@@ -59,7 +59,7 @@
         <!-- Header Section -->
         <div class="flex flex-col items-center justify-center text-center gap-4">
             <p class="text-lg font-semibold text-primary-blue">
-                About Our Company
+                Our Company
             </p>
             <div class="space-y-4">
                 <h3 class="text-3xl font-bold">

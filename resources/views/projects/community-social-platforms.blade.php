@@ -187,7 +187,7 @@
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div class="text-center space-y-3">
                             <i class="fa-brands fa-react text-3xl text-primary-blue"></i>
-                            <h4 class="font-semibold">React Native</h4>
+                            <h4 class="font-semibold">Flutter</h4>
                             <p class="text-sm text-primary-gray font-nunito-sans">Cross-platform mobile development</p>
                         </div>
                         <div class="text-center space-y-3">
