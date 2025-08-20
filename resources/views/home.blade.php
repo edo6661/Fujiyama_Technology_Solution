@@ -11,6 +11,6 @@
     {{-- <x-features.home.banner-consultation/> --}}
     {{-- <x-features.home.team/> --}}
     {{-- <x-features.home.blogs :blogs="$blogs"/> --}}
-    <x-features.home.contact />
-    <x-features.home.map />
+    {{-- <x-features.home.contact /> --}}
+    <x-features.home.contact-revision />
 </x-layouts.app>
