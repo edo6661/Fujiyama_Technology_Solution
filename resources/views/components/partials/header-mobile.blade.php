@@ -1,11 +1,11 @@
 @php
 $navItems = [
-    'Home' => '/',
-    'Company' => '/company',
-    'Services' => '/services',
-    'Projects' => '/projects',
-    'Blog' => '/blog',
-    'Contact' => '/contact',
+    'Home' => '/#',
+    'Company' => '/#company',
+    'Services' => '/#services',
+    'Projects' => '/#projects',
+    'Blog' => '/#blog',
+    'Contact' => '/#contact',
 ]; 
 @endphp
 <div class="bg-primary-blue py-4 md:hidden flex items-center justify-between px-4 h-[72px]">

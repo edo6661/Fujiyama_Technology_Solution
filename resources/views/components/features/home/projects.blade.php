@@ -7,6 +7,7 @@
             'icon' => '<i class="fa-solid fa-building-columns"></i>',
             'projects' => ['Digital Licensing System', 'Public Data Portal', 'e-Government Services'],
             'image' => 'images/projects/government-mockup.jpg',
+            'href' => route('project.government-systems'), 
         ],
         [
             'title' => 'Enterprise Solutions',
@@ -14,6 +15,7 @@
             'icon' => '<i class="fa-solid fa-building"></i>',
             'projects' => ['Custom ERP System', 'CRM Solutions', 'Logistics Management'],
             'image' => 'images/projects/enterprise-mockup.jpg',
+            'href' => route('project.enterprise-solutions'), 
         ],
         [
             'title' => 'Community & Social Platforms',
@@ -21,6 +23,7 @@
             'icon' => '<i class="fa-solid fa-users-gear"></i>',
             'projects' => ['Community Mobile Apps', 'Social Innovation Platform', 'Digital Community Hub'],
             'image' => 'images/projects/community-mockup.jpg',
+            'href' => route('project.community-social-platforms'), 
         ],
         [
             'title' => 'Technology Integrations',
@@ -29,6 +32,7 @@
             'icon' => '<i class="fa-solid fa-microchip"></i>',
             'projects' => ['AI-Powered Analytics', 'IoT Smart Solutions', 'Blockchain Integration'],
             'image' => 'images/projects/technology-mockup.jpg',
+            'href' => route('project.technology-integrations'), 
         ],
     ];
 @endphp
@@ -59,16 +63,21 @@
 
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-8">
             @foreach ($projectCategories as $category)
-                <x-features.home.project-category-item :title="$category['title']" :description="$category['description']" :icon="$category['icon']"
-                    :projects="$category['projects']" :image="$category['image']" />
+                <x-features.home.project-category-item 
+                    :title="$category['title']" 
+                    :description="$category['description']" 
+                    :icon="$category['icon']"
+                    :projects="$category['projects']" 
+                    :image="$category['image']" 
+                    :href="$category['href']" />
             @endforeach
         </div>
 
-        <div class="flex justify-center mt-12">
+        {{-- <div class="flex justify-center mt-12">
             <x-shared.link-button variant="primary" class="w-fit">
                 VIEW ALL PROJECTS
             </x-shared.link-button>
-        </div>
+        </div> --}}
     </div>
 </section>
 

@@ -4,6 +4,7 @@
     'icon' => null,
     'projects' => [],
     'image' => null,
+    'href' => '#', 
 ])
 
 <div
@@ -11,7 +12,6 @@
     <div class="relative overflow-hidden">
         <div
             class="aspect-video bg-gradient-to-br from-primary-blue/10 to-primary-blue/5 flex items-center justify-center">
-            {{-- Uncomment ketika image sudah tersedia --}}
             <img src="{{ asset($image) }}" alt="{{ $title }}"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
         </div>
@@ -49,12 +49,7 @@
         </div>
 
         <div class="pt-2">
-            <button
-                class="text-primary-blue font-semibold text-sm hover:text-primary-blue/80 transition-colors duration-300 flex items-center gap-2 group/btn">
-                Learn More
-                <i
-                    class="fa-solid fa-arrow-right text-xs group-hover/btn:translate-x-1 transition-transform duration-300"></i>
-            </button>
+            <x-features.home.link-learn-more-project-category-item :href="$href"/>
         </div>
     </div>
 </div>

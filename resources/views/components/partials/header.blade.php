@@ -8,7 +8,7 @@
                 Welcome to FTS
             </p>
         </div>
-        <div class="flex bg-white items-center justify-around py-4">
+        <div class="flex bg-white items-center justify-around py-2">
             <div>
                 <a href="/">
                     <img src="{{ asset('images/logo-fts.jpg') }}" alt="Logo" class="w-full lg:h-20 h-16">
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-
+    @if(request()->routeIs('home'))
     <nav class="bg-primary-indigo py-4 sticky-nav w-full z-50 md:block hidden">
         <div class="flex items-center justify-center lg:gap-16 gap-8">
             <ul class="items-center flex gap-4">
@@ -42,6 +42,7 @@
                         'Home' => '/#',
                         'About' => '/#about',
                         'Services' => '/#what-we-do',
+                        'Company' => '/#company',
                         // 'Blog' => '/#blog',
                         'Contact' => '/#footer',
                     ];
@@ -72,6 +73,7 @@
 
         </div>
     </nav>
+    @endif
 
 </header>
 

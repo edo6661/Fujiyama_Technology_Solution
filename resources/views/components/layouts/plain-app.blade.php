@@ -7,9 +7,9 @@
         <x-partials.head :title="$title"/>
     </head>
     <body>
-      
-        <main>
+        <main class="space-y-16">
             {{ $slot }}
         </main>
+        <x-partials.footer/>
     </body>
 </html>

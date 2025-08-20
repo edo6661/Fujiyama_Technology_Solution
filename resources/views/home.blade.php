@@ -6,6 +6,7 @@
     <x-features.home.what-we-do />
     <x-features.home.projects />
     <x-features.home.why-choose-us />
+    <x-features.home.company />
 
     {{-- <x-features.home.banner-consultation/> --}}
     {{-- <x-features.home.team/> --}}
