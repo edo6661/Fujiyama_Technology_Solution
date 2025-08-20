@@ -11,10 +11,10 @@
                     <div
                         class="group flex items-start gap-3 sm:gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-md">
                         <i
-                            class="fas fa-map-marker-alt text-blue-800 text-lg sm:text-xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
+                            class="fas fa-map-marker-alt text-primary-blue text-lg sm:text-xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
                         <div class="min-w-0">
                             <p
-                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-blue-800">
+                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
                                 Head Office</p>
                             <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
                                 Neo Soho, Jalan Let. Jend. S. Parman Kav. 28 Unit 2011<br>
@@ -27,35 +27,35 @@
                     <div
                         class="group flex items-start gap-3 sm:gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-md">
                         <i
-                            class="fas fa-phone text-blue-800 text-lg sm:text-xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
+                            class="fas fa-phone text-primary-blue text-lg sm:text-xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
                         <div>
                             <p
-                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-blue-800">
+                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
                                 Phone Number</p>
                             <a href="tel:+6285124790253"
-                                class="text-gray-600 text-sm sm:text-base hover:text-blue-800 transition-colors">+62 851
+                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">+62 851
                                 2479 0253</a>
                         </div>
                     </div>
                     <div
                         class="group flex items-start gap-3 sm:gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-md">
                         <i
-                            class="fas fa-envelope text-blue-800 text-lg sm:text-xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
+                            class="fas fa-envelope text-primary-blue text-lg sm:text-xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
                         <div>
                             <p
-                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-blue-800">
+                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
                                 Email Address</p>
                             <a href="mailto:info@fts.biz.id"
-                                class="text-gray-600 text-sm sm:text-base hover:text-blue-800 transition-colors">info@fts.biz.id</a>
+                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">info@fts.biz.id</a>
                         </div>
                     </div>
                     <div
                         class="group flex items-start gap-3 sm:gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-md">
                         <i
-                            class="fas fa-clock text-blue-800 text-lg sm:text-xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
+                            class="fas fa-clock text-primary-blue text-lg sm:text-xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
                         <div>
                             <p
-                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-blue-800">
+                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
                                 Business Hours</p>
                             <p class="text-gray-600 text-sm sm:text-base">Monday - Friday: 08:00 - 17:00 WIB</p>
                         </div>
@@ -63,13 +63,13 @@
                     <div
                         class="group flex items-start gap-3 sm:gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-md">
                         <i
-                            class="fab fa-whatsapp text-blue-800 text-xl sm:text-2xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
+                            class="fab fa-whatsapp text-primary-blue text-xl sm:text-2xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
                         <div>
                             <p
-                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-blue-800">
+                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
                                 Contact via WhatsApp</p>
                             <a href="https://wa.me/6285124790253" target="_blank"
-                                class="text-gray-600 text-sm sm:text-base hover:text-blue-800 transition-colors">+62 851
+                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">+62 851
                                 2479 0253</a>
                             <p class="text-xs sm:text-sm text-gray-500 mt-1">Quick response during business hours</p>
                         </div>

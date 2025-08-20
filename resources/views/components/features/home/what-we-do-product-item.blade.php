@@ -15,7 +15,7 @@
     <div class="container-image-what-we-do">
         {!! $image !!}
     </div>
-   <x-features.home.blog-item-link :href="$link"/>
+   {{-- <x-features.home.blog-item-link :href="$link"/> --}}
 </div>
 <style>
     .container-image-what-we-do i {

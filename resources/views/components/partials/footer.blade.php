@@ -81,7 +81,7 @@
                 <a href="#" class="text-primary-blue text-lg hover:text-blue-700"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#" class="text-primary-blue text-lg hover:text-blue-500"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#" class="text-primary-blue text-lg hover:text-pink-600"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="text-primary-blue text-lg hover:text-blue-800"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="text-primary-blue text-lg hover:text-primary-blue"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>

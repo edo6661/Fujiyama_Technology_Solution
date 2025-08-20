@@ -11,7 +11,7 @@
     $baseClasses = 'inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500';
     
     $variantClasses = [
-        'primary' => 'bg-primary-blue text-white hover:bg-blue-700 active:bg-blue-800',
+        'primary' => 'bg-primary-blue text-white hover:bg-blue-700 active:bg-primary-blue',
         'secondary' => 'bg-gray-200 text-gray-900 hover:bg-gray-300 active:bg-gray-400',
         'success' => 'bg-green-600 text-white hover:bg-green-700 active:bg-green-800',
         'danger' => 'bg-red-600 text-white hover:bg-red-700 active:bg-red-800',
