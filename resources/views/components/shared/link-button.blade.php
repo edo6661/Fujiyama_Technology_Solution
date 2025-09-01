@@ -1,6 +1,6 @@
 @props([
     'variant' => 'primary',
-    'tag' => 'a', // default sebagai anchor
+    'tag' => 'a', 
     'href' => '#',
     'type' => 'button'
 ])

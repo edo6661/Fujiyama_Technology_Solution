@@ -33,7 +33,8 @@
                                 class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
                                 Phone Number</p>
                             <a href="tel:+6285124790253"
-                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">+62 851
+                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">+62
+                                851
                                 2479 0253</a>
                         </div>
                     </div>
@@ -69,9 +70,11 @@
                                 class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
                                 Contact via WhatsApp</p>
                             <a href="https://wa.me/6285124790253" target="_blank"
-                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">+62 851
+                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">+62
+                                851
                                 2479 0253</a>
-                            <p class="text-xs sm:text-sm text-gray-500 mt-1">Quick response during business hours</p>
+                            <p class="text-xs sm:text-sm text-gray-500 mt-1">Quick response during business hours
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -147,3 +150,12 @@
 
     </div>
 </section>
+<style>
+    .rotate {
+        animation: rotate 8s linear infinite;
+    }
+
+    .top-bottom {
+        animation: topBottom 6s ease-in-out infinite;
+    }
+</style>

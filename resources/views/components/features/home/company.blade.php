@@ -3,46 +3,46 @@
         [
             'number' => '95%',
             'label' => 'Indonesian Team',
-            'description' => 'Local talent with global perspective'
+            'description' => 'Local talent with global perspective',
         ],
         [
             'number' => '100+',
             'label' => 'Projects Completed',
-            'description' => 'Successful digital solutions delivered'
+            'description' => 'Successful digital solutions delivered',
         ],
         [
             'number' => '5+',
             'label' => 'Years Experience',
-            'description' => 'Proven expertise in IT solutions'
+            'description' => 'Proven expertise in IT solutions',
         ],
         [
             'number' => '24/7',
             'label' => 'Support Available',
-            'description' => 'Round-the-clock technical assistance'
-        ]
+            'description' => 'Round-the-clock technical assistance',
+        ],
     ];
 
     $companyValues = [
         [
             'title' => 'Innovation First',
             'description' => 'We embrace cutting-edge technology to deliver solutions that drive real business value.',
-            'icon' => '<i class="fa-solid fa-lightbulb"></i>'
+            'icon' => '<i class="fa-solid fa-lightbulb"></i>',
         ],
         [
             'title' => 'Local Expertise',
             'description' => 'Deep understanding of Indonesian market needs combined with global tech standards.',
-            'icon' => '<i class="fa-solid fa-users"></i>'
+            'icon' => '<i class="fa-solid fa-users"></i>',
         ],
         [
             'title' => 'Quality Assurance',
             'description' => 'Japanese-rooted precision ensures every solution meets the highest quality standards.',
-            'icon' => '<i class="fa-solid fa-shield-halved"></i>'
+            'icon' => '<i class="fa-solid fa-shield-halved"></i>',
         ],
         [
             'title' => 'Partnership Focus',
             'description' => 'Building long-term relationships through transparent collaboration and shared success.',
-            'icon' => '<i class="fa-solid fa-handshake"></i>'
-        ]
+            'icon' => '<i class="fa-solid fa-handshake"></i>',
+        ],
     ];
 @endphp
 
@@ -79,13 +79,18 @@
                         PT Fujiyama Technology Solutions
                     </h4>
                     <p class="text-primary-gray font-nunito-sans leading-relaxed">
-                        Founded with a vision to transform Indonesia's digital landscape, FTS combines Japanese technological precision with deep local market understanding. We are more than just a technology company – we are digital transformation partners committed to building solutions that truly matter.
+                        Founded with a vision to transform Indonesia's digital landscape, FTS combines Japanese
+                        technological precision with deep local market understanding. We are more than just a technology
+                        company – we are digital transformation partners committed to building solutions that truly
+                        matter.
                     </p>
                     <p class="text-primary-gray font-nunito-sans leading-relaxed">
-                        Our diverse team of Indonesian professionals, supported by Japanese methodologies, creates innovative solutions for businesses, government institutions, and communities across the archipelago.
+                        Our diverse team of Indonesian professionals, supported by Japanese methodologies, creates
+                        innovative solutions for businesses, government institutions, and communities across the
+                        archipelago.
                     </p>
                 </div>
-                
+
                 <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
                     <div class="flex items-start gap-4">
                         <div class="container-vision-icon">
@@ -94,7 +99,9 @@
                         <div class="space-y-2">
                             <h5 class="text-lg font-semibold text-black">Our Vision</h5>
                             <p class="text-primary-gray font-nunito-sans text-sm">
-                                To be Indonesia's leading digital transformation partner, empowering businesses and communities through innovative technology solutions that bridge global excellence with local insights.
+                                To be Indonesia's leading digital transformation partner, empowering businesses and
+                                communities through innovative technology solutions that bridge global excellence with
+                                local insights.
                             </p>
                         </div>
                     </div>
@@ -108,7 +115,9 @@
                         <div class="space-y-2">
                             <h5 class="text-lg font-semibold text-black">Our Mission</h5>
                             <p class="text-primary-gray font-nunito-sans text-sm">
-                                To deliver cutting-edge IT solutions that solve real-world challenges, enhance operational efficiency, and drive sustainable growth for our clients while contributing to Indonesia's digital advancement.
+                                To deliver cutting-edge IT solutions that solve real-world challenges, enhance
+                                operational efficiency, and drive sustainable growth for our clients while contributing
+                                to Indonesia's digital advancement.
                             </p>
                         </div>
                     </div>
@@ -117,8 +126,8 @@
 
             <div class="relative">
                 <div class="bg-gradient-to-br from-primary-blue/10 to-primary-blue/5 rounded-2xl p-8">
-                    <img src="{{ asset('images/soho.png') }}" alt="FTS Team" 
-                         class="w-full h-80 object-cover rounded-xl shadow-lg">
+                    <img src="{{ asset('images/soho.png') }}" alt="FTS Team"
+                        class="w-full h-80 object-cover rounded-xl shadow-lg">
                 </div>
                 <div class="absolute -bottom-6 -right-6 bg-primary-blue text-white p-6 rounded-xl shadow-xl">
                     <div class="text-center">
@@ -133,11 +142,7 @@
         <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
             <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
                 @foreach ($companyStats as $stat)
-                    <x-features.home.company-stat-item
-                        :number="$stat['number']"
-                        :label="$stat['label']"
-                        :description="$stat['description']"
-                    />
+                    <x-features.home.company-stat-item :number="$stat['number']" :label="$stat['label']" :description="$stat['description']" />
                 @endforeach
             </div>
         </div>
@@ -149,17 +154,14 @@
                     Our Core Values
                 </h4>
                 <p class="text-primary-gray font-nunito-sans max-w-2xl mx-auto">
-                    These fundamental principles guide everything we do and shape how we approach every project and partnership.
+                    These fundamental principles guide everything we do and shape how we approach every project and
+                    partnership.
                 </p>
             </div>
 
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
                 @foreach ($companyValues as $value)
-                    <x-features.home.company-value-item
-                        :title="$value['title']"
-                        :description="$value['description']"
-                        :icon="$value['icon']"
-                    />
+                    <x-features.home.company-value-item :title="$value['title']" :description="$value['description']" :icon="$value['icon']" />
                 @endforeach
             </div>
         </div>
@@ -171,7 +173,8 @@
                     Ready to Transform Your Business?
                 </h4>
                 <p class="font-nunito-sans max-w-2xl mx-auto">
-                    Join the many organizations that trust FTS to deliver innovative digital solutions. Let's discuss how we can help accelerate your digital transformation journey.
+                    Join the many organizations that trust FTS to deliver innovative digital solutions. Let's discuss
+                    how we can help accelerate your digital transformation journey.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <x-shared.link-button variant="secondary" class="w-fit">
@@ -190,25 +193,37 @@
     .rotate {
         animation: rotate 8s linear infinite;
     }
-    
+
     .top-bottom {
         animation: topBottom 6s ease-in-out infinite;
     }
-    
+
     .container-vision-icon i,
     .container-mission-icon i {
         font-size: 1.5rem;
         color: var(--primary-blue);
         transition: transform 0.3s ease;
     }
-    
+
     @keyframes rotate {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
     }
-    
+
     @keyframes topBottom {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-20px); }
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
     }
 </style>
