@@ -4,31 +4,31 @@
             'title' => 'Custom Software Development',
             'description' => 'Tailored solutions for businesses and governments to optimize operations and services.',
             'image' => '<i class="fa-solid fa-code"></i>',
-            'link' => '#',
+            'link' => route('services.custom-software-development'),
         ],
         [
             'title' => 'Mobile Apps & Digital Platforms',
             'description' => 'Innovative apps and social media solutions connecting people and communities.',
             'image' => '<i class="fa-solid fa-mobile-screen-button"></i>',
-            'link' => '#',
+            'link' => route('services.digital-platforms'),
         ],
         [
             'title' => 'IT Consulting & System Integration',
             'description' => 'Expertise to integrate the latest global technologies into your business.',
             'image' => '<i class="fa-solid fa-network-wired"></i>',
-            'link' => '#',
+            'link' => route('services.it-consulting'),
         ],
         [
             'title' => 'Smart Government Solutions',
             'description' => 'Systems designed to support governance and public service innovation.',
             'image' => '<i class="fa-solid fa-landmark"></i>',
-            'link' => '#',
+            'link' => route('services.smart-government-solutions'),
         ],
         [
             'title' => 'Digital Transformation',
             'description' => 'Helping enterprises stay competitive in the rapidly changing digital landscape.',
             'image' => '<i class="fa-solid fa-robot"></i>',
-            'link' => '#',
+            'link' => route('services.digital-transformation'),
         ],
     ];
 

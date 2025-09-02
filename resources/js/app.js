@@ -1,5 +1,5 @@
-import './bootstrap';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "./bootstrap";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const toggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");

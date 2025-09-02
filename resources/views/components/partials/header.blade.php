@@ -38,12 +38,12 @@
             <ul class="items-center flex gap-4">
                 @php
                     $navItems = [
-                        'Home' => '/#',
+                        'Home' => '/',
                         'About' => '/#about',
                         'Services' => '/#what-we-do',
                         'Company' => '/#company',
                         // 'Blog' => '/#blog',
-                        'Contact' => '/#footer',
+                        'Contact' => '/#contact',
                     ];
                 @endphp
                 @foreach ($navItems as $name => $link)

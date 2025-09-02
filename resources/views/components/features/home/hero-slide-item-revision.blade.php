@@ -9,10 +9,10 @@
         <h2 class="md:text-7xl text-3xl font-bold"> {{ $title }} </h2>
 
         <div class="container-btn-hero flex items-center justify-center gap-8">
-            <x-shared.link-button variant="secondary" class="w-fit" href="/#footer">
+            <x-shared.link-button variant="secondary" class="w-fit" href="#contact">
                 Get in Touch
             </x-shared.link-button>
-            <x-shared.link-button href="/#why-choose-us" class="w-fit">
+            <x-shared.link-button href="#why-choose-us" class="w-fit">
                 Discover Our Solutions
             </x-shared.link-button>
         </div>
