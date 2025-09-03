@@ -63,7 +63,7 @@
   "@type": "Organization",
   "name": "PT. Fujiyama Technology Solutions",
   "alternateName": "Fujiyama Technology Solutions",
-  "url": "https://fts.biz.id/",
+  "url": "https://www.fts.biz.id/",
   "logo": "{{ asset('images/logo-fts.jpg') }}",
   "contactPoint": {
     "@type": "ContactPoint",
