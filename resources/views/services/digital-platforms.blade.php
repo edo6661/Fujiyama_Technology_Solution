@@ -1,16 +1,15 @@
 <x-layouts.app title="Mobile Apps & Digital Platforms">
-    <!-- Hero Section -->
-    <section class="relative px-4 py-16">
+    <section class="relative px-4 py-12 md:py-16">
         <div class="absolute inset-0 bg-gradient-to-br from-primary-blue/5 to-white"></div>
         <div class="relative z-10 text-center space-y-8">
             <div class="flex justify-center">
                 <div class="p-4 bg-primary-blue/10 rounded-full">
-                    <i class="fa-solid fa-mobile-screen-button text-4xl text-primary-blue"></i>
+                    <i class="fa-solid fa-mobile-screen-button text-3xl sm:text-4xl text-primary-blue"></i>
                 </div>
             </div>
             <div class="space-y-4">
-                <h1 class="text-4xl font-bold text-black">Mobile Apps & Digital Platforms</h1>
-                <p class="text-lg text-primary-gray font-nunito-sans max-w-3xl mx-auto">
+                <h1 class="text-3xl sm:text-4xl font-bold text-black">Mobile Apps & Digital Platforms</h1>
+                <p class="text-base sm:text-lg text-primary-gray font-nunito-sans max-w-3xl mx-auto">
                     We architect and engineer intuitive, high-performance mobile applications that transform your ideas
                     into engaging digital experiences on iOS and Android.
                 </p>
@@ -18,19 +17,17 @@
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="px-4 py-16 bg-white">
-        <div class="max-w-6xl mx-auto space-y-20">
+    <section class="px-4 py-12 md:py-16 bg-white">
+        <div class="max-w-6xl mx-auto space-y-16 md:space-y-20">
 
-            <!-- Key Benefits Section -->
             <div class="text-center">
-                <h2 class="text-3xl font-bold text-black">Go Beyond the Desktop</h2>
+                <h2 class="text-2xl sm:text-3xl font-bold text-black">Go Beyond the Desktop</h2>
                 <p class="text-primary-gray font-nunito-sans mt-4 max-w-2xl mx-auto">
                     In a mobile-first world, a powerful app is not just an advantage—it's a necessity. We build
                     platforms
                     designed to forge a direct connection with your audience.
                 </p>
-                <div class="grid md:grid-cols-3 gap-8 mt-12 text-left">
+                <div class="grid md:grid-cols-3 gap-6 md:gap-8 mt-12 text-left">
                     <div class="bg-gray-50 rounded-lg p-6">
                         <i class="fa-solid fa-users text-3xl text-primary-blue mb-4"></i>
                         <h3 class="font-semibold text-xl mb-2">Ubiquitous Accessibility</h3>
@@ -63,24 +60,27 @@
         </div>
     </section>
 
-    <!-- Types of Apps We Build (Interactive Tabs) -->
-    <section class="px-4 py-16 bg-white">
+    <section class="px-4 py-12 md:py-16 bg-gray-50/70">
         <div class="max-w-6xl mx-auto">
-            <div class="text-left mb-8">
-                <h2 class="text-3xl font-bold text-black">Expertise Across All Platforms</h2>
+            <div class="text-center sm:text-left mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-black">Expertise Across All Platforms</h2>
                 <p class="text-primary-gray font-nunito-sans mt-4 max-w-3xl">
                     Whether you need to capture the Apple ecosystem, the vast Android market, or both, our team has the
                     expertise to deliver.
                 </p>
             </div>
-            <div class="flex border-b border-gray-200">
-                <button id="iosTab" class="py-4 px-6 font-semibold border-b-2 transition">iOS Development</button>
-                <button id="androidTab" class="py-4 px-6 font-semibold border-b-2 transition">Android
+
+            <div id="tab-buttons" class="flex flex-wrap justify-center sm:justify-start border-b border-gray-200">
+                <button data-tab="ios" class="tab-button py-4 px-6 font-semibold border-b-2 transition">iOS
                     Development</button>
-                <button id="crossTab" class="py-4 px-6 font-semibold border-b-2 transition">Cross-Platform</button>
+                <button data-tab="android" class="tab-button py-4 px-6 font-semibold border-b-2 transition">Android
+                    Development</button>
+                <button data-tab="cross"
+                    class="tab-button py-4 px-6 font-semibold border-b-2 transition">Cross-Platform</button>
             </div>
+
             <div class="pt-12 min-h-[400px]">
-                <div id="iosContent" class="grid md:grid-cols-2 gap-x-16 gap-y-8 items-center" style="display: none;">
+                <div id="ios-content" class="tab-content grid md:grid-cols-2 gap-x-16 gap-y-8 items-center">
                     <div class="p-4 md:p-6">
                         <img src="{{ asset('images/product/ios-app.jpg') }}" alt="iOS App"
                             class="rounded-lg shadow-md w-full">
@@ -93,8 +93,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="androidContent" class="grid md:grid-cols-2 gap-x-16 gap-y-8 items-center"
-                    style="display: none;">
+                <div id="android-content" class="tab-content grid md:grid-cols-2 gap-x-16 gap-y-8 items-center">
                     <div class="p-4 md:p-6">
                         <img src="{{ asset('images/product/android-app.jpg') }}" alt="Android App"
                             class="rounded-lg shadow-md w-full">
@@ -107,7 +106,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="crossContent" class="grid md:grid-cols-2 gap-x-16 gap-y-8 items-center" style="display: none;">
+                <div id="cross-content" class="tab-content grid md:grid-cols-2 gap-x-16 gap-y-8 items-center">
                     <div class="p-4 md:p-6">
                         <img src="{{ asset('images/product/android-ios.png') }}" alt="Cross-Platform App"
                             class="rounded-lg shadow-md w-full">
@@ -123,55 +122,47 @@
             </div>
         </div>
     </section>
+
     <script>
-        // JavaScript to manage the tab functionality
-        document.getElementById("iosTab").addEventListener("click", function() {
-            showTab("ios");
-        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            const activeClasses = ['border-primary-blue', 'text-primary-blue'];
 
-        document.getElementById("androidTab").addEventListener("click", function() {
-            showTab("android");
-        });
+            function showTab(tabName) {
+                // Sembunyikan semua konten
+                tabContents.forEach(content => {
+                    content.style.display = 'none';
+                });
 
-        document.getElementById("crossTab").addEventListener("click", function() {
-            showTab("cross");
-        });
+                // Hapus kelas aktif dari semua tombol
+                tabButtons.forEach(button => {
+                    button.classList.remove(...activeClasses);
+                });
 
-        function showTab(tab) {
-            // Hide all contents
-            document.getElementById("iosContent").style.display = "none";
-            document.getElementById("androidContent").style.display = "none";
-            document.getElementById("crossContent").style.display = "none";
+                // Tampilkan konten yang dipilih
+                const contentToShow = document.getElementById(`${tabName}-content`);
+                if (contentToShow) {
+                    contentToShow.style.display = 'grid';
+                }
 
-            // Remove active class from buttons
-            document
-                .getElementById("iosTab")
-                .classList.remove("border-primary-blue", "text-primary-blue");
-            document
-                .getElementById("androidTab")
-                .classList.remove("border-primary-blue", "text-primary-blue");
-            document
-                .getElementById("crossTab")
-                .classList.remove("border-primary-blue", "text-primary-blue");
-
-            // Show selected content
-            if (tab === "ios") {
-                document.getElementById("iosContent").style.display = "grid";
-                document
-                    .getElementById("iosTab")
-                    .classList.add("border-primary-blue", "text-primary-blue");
-            } else if (tab === "android") {
-                document.getElementById("androidContent").style.display = "grid";
-                document
-                    .getElementById("androidTab")
-                    .classList.add("border-primary-blue", "text-primary-blue");
-            } else if (tab === "cross") {
-                document.getElementById("crossContent").style.display = "grid";
-                document
-                    .getElementById("crossTab")
-                    .classList.add("border-primary-blue", "text-primary-blue");
+                // Tambahkan kelas aktif ke tombol yang dipilih
+                const buttonToShow = document.querySelector(`[data-tab="${tabName}"]`);
+                if (buttonToShow) {
+                    buttonToShow.classList.add(...activeClasses);
+                }
             }
-        }
-        showTab("ios");
+
+            // Tambahkan event listener ke setiap tombol
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabName = button.getAttribute('data-tab');
+                    showTab(tabName);
+                });
+            });
+
+            // Tampilkan tab default saat halaman dimuat
+            showTab('ios');
+        });
     </script>
 </x-layouts.app>

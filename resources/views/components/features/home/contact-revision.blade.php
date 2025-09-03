@@ -32,10 +32,8 @@
                             <p
                                 class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
                                 Phone Number</p>
-                            <a href="tel:+6285124790253"
-                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">+62
-                                851
-                                2479 0253</a>
+                            <a href="tel:+6289529336179"
+                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">0895-2933-6179</a>
                         </div>
                     </div>
                     <div
@@ -59,22 +57,6 @@
                                 class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
                                 Business Hours</p>
                             <p class="text-gray-600 text-sm sm:text-base">Monday - Friday: 08:00 - 17:00 WIB</p>
-                        </div>
-                    </div>
-                    <div
-                        class="group flex items-start gap-3 sm:gap-4 p-4 rounded-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-md">
-                        <i
-                            class="fab fa-whatsapp text-primary-blue text-xl sm:text-2xl mt-1 flex-shrink-0 transition-transform duration-300 group-hover:scale-110"></i>
-                        <div>
-                            <p
-                                class="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-blue">
-                                Contact via WhatsApp</p>
-                            <a href="https://wa.me/6285124790253" target="_blank"
-                                class="text-gray-600 text-sm sm:text-base hover:text-primary-blue transition-colors">+62
-                                851
-                                2479 0253</a>
-                            <p class="text-xs sm:text-sm text-gray-500 mt-1">Quick response during business hours
-                            </p>
                         </div>
                     </div>
                 </div>
