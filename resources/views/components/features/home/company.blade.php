@@ -180,7 +180,7 @@
                     <x-shared.link-button variant="secondary" class="w-fit">
                         START YOUR PROJECT
                     </x-shared.link-button>
-                    <x-shared.link-button variant="primary" class="w-fit">
+                    <x-shared.link-button variant="primary" class="w-fit" href="#about-us">
                         LEARN MORE ABOUT US
                     </x-shared.link-button>
                 </div>
