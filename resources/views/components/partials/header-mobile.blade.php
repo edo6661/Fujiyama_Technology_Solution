@@ -4,6 +4,7 @@
         'About' => '/#about',
         'Services' => '/#what-we-do',
         'Company' => '/#company',
+        'Global PR Ads' => '/#global-pr-ads',
         // 'Blog' => '/#blog',
         'Contact' => '/#footer',
     ];
